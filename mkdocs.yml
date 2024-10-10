@@ -4,7 +4,7 @@ site_url: https://serpemorales.github.io
 nav:
   - Home: index.md
   - DAW:
-      - Práctica 2.1: https://raw.githubusercontent.com/usuario/practicas_repo/main/Practica%202.1/index.md
+      - Práctica 2.1: https://raw.githubusercontent.com/Serpemorales/practicas_daw/main/Practica%202.1/index.md
 
 theme:
   name: material  
