@@ -1,4 +1,16 @@
 site_name: Web de Sergio
 site_url: https://serpemorales.github.io
+
+nav:
+  - Home: index.md
+  - Prácticas:
+      - Práctica 2.1: Practica%202.1/index.md
+      - Práctica 2.2: Practica%202.2/index.md
+
 theme:
-  name: material
+  name: material  
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc(permalink=True)
