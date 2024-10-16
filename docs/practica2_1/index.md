@@ -134,7 +134,3 @@ Si no realizamos el link simbólico, no se dará de alta automáticamente nuestr
 > ¿Qué pasa si no le doy los permisos adecuados a `/var/www/nombre_web`?
 
 Si no le damos los permisos adecuados, nos dará un error de acceso no autorizado cuando intentemos entrar en la página web. Básicamente, nuestra web no funcionará correctamente.
-
----
-
-![Firma Sergio](../assets/images/yuki_dev.png)
