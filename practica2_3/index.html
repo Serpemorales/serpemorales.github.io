@@ -485,34 +485,34 @@
 <h1 id="practica-23-proxy-inverso-con-nginx">Práctica 2.3 - Proxy Inverso con Nginx</h1>
 <h2 id="clonacion-de-maquina-virtual">Clonación de Máquina Virtual</h2>
 <p>Primero vamos a tener que clonar la Máquina Virtual para así tener dos servidores, el que ya teníamos de antes, y el del proxy. Es muy importante que generemos nuevas direcciones MAC en esta clonación.</p>
-<p><img alt="Screenshot_1" src="../assets/images/Practica%202.2/Screenshot_1.png" /> </p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%202.3/Screenshot_1.png" /> </p>
 <p>Una vez tengamos las dos máquinas, ya podemos empezar.</p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%202.2/Screenshot_2.png" /> </p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%202.3/Screenshot_2.png" /> </p>
 <h2 id="configuracion-maquina-principal">Configuración Máquina Principal</h2>
 <p><strong>AVISO: Recordar a la hora de probar todo en el navegador desactivar la caché o utilizar ventana privada.</strong></p>
 <p>Para preparar la máquina principal, vamos a cambiar el nombre de nuestra web ya creada por <code>webserver</code>, y para ello tenemos que cambiar su nombre en todos los archivos que sean necesarios. Además, haremos que el servidor en lugar de escuchar el puerto 80 escuche el 8080.</p>
-<p><img alt="Screenshot_3" src="../assets/images/Practica%202.2/Screenshot_3.png" /> </p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%202.3/Screenshot_3.png" /> </p>
 <p>Tras este cambio, es necesario que deshagamos el link simbólico antiguo, y creemos uno nuevo, reiniciando tras esto Nginx.</p>
-<p><img alt="Screenshot_4" src="../assets/images/Practica%202.2/Screenshot_4.png" /> </p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%202.3/Screenshot_4.png" /> </p>
 <h2 id="configuracion-maquina-proxy">Configuración Máquina Proxy</h2>
 <p>Ahora tenemos que configurar esta máquina para poder acceder al proxy por nuestra web. Para ello, vamos a crear en <em>sites-avalaible</em> un nuevo archivo, configurándolo de la siguiente forma.</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%202.2/Screenshot_5.png" /> </p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%202.3/Screenshot_5.png" /> </p>
 <p>Como se ve, en mi caso le he añadido ya el header, pero no es necesario por ahora.</p>
 <p>Tras esto, vamos a realizar el link simbólico y a reiniciar nginx en esta máquina, para dejar todo a punto .</p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%202.2/Screenshot_6.png" /> </p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%202.3/Screenshot_6.png" /> </p>
 <p>Es importante que modifiquemos también el archivo hosts, añadiendo la IP de la máquina que hace de proxy.</p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%202.2/Screenshot_7.png" /> </p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%202.3/Screenshot_7.png" /> </p>
 <h2 id="comprobaciones">Comprobaciones</h2>
 <p>Dentro del navegador, si accedemos a las herramientas de desarrollador (En el caso de Firefox con <em>F12</em>) podremos comprobar que el estado sea 200 OK, indicando que todo está correcto.</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%202.2/Screenshot_8.png" /> </p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%202.3/Screenshot_8.png" /> </p>
 <h2 id="anadir-cabecera">Añadir cabecera</h2>
 <p>Como indiqué antes, ahora vamos a añadir una cabecera, de esta manera podemos demostrar de forma más clara que la petición pasa por el proxy inverso y después llega al servidor web por el mismo camino.</p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%202.2/Screenshot_9.png" /> </p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%202.3/Screenshot_9.png" /> </p>
 <p>Tras hacerlo en el proxy, lo haremos también en el del servidor web, de manera que quedaría así.</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%202.2/Screenshot_10.png" /> </p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%202.3/Screenshot_10.png" /> </p>
 <p>Es importante que sean nombres distintos, para que sepamos identificar bien cual es cada uno. En mi caso el del proxy se ha llamado <code>Proxy_inverso_sergio</code> y el del servidor web se ha llamado <code>servidor_web_sergio</code>.</p>
 <p>Ahora abrimos de nuevo la web, y volvemos a usar las herramientas de desarrollador de Firefox. Si todo va bien, podremos ver en la cabecera ambos host, de esta manera.</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%202.2/Screenshot_11.png" /> </p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%202.3/Screenshot_11.png" /> </p>
 
 
 
