@@ -153,7 +153,7 @@ Completa la configuración para conseguirlo:
 		location /Proyectos {
 			auth_basic "Área restringida";
 			auth_basic_user_file /etc/nginx/.htpasswd;
-			try_files $uri $uri/ =404ç
+			try_files $uri $uri/ =404;
 		}
     }
 ```
