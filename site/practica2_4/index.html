@@ -8,21 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica2_4/readme/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica2_4/">
+      
+      
+        <link rel="prev" href="../practica2_3/">
       
       
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
-        <title>Práctica 2.4 - Balanceo de carga con proxy inverso en Nginx - Web de Sergio</title>
+        <title>Práctica 2.4 - Web de Sergio</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Web de Sergio" class="md-header__button md-logo" aria-label="Web de Sergio" data-md-component="logo">
+    <a href=".." title="Web de Sergio" class="md-header__button md-logo" aria-label="Web de Sergio" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.4 - Balanceo de carga con proxy inverso en Nginx
+              Práctica 2.4
             
           </span>
         </div>
@@ -171,7 +173,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Web de Sergio" class="md-nav__button md-logo" aria-label="Web de Sergio" data-md-component="logo">
+    <a href=".." title="Web de Sergio" class="md-nav__button md-logo" aria-label="Web de Sergio" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,7 +191,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -206,17 +208,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -230,7 +234,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             DAW
@@ -244,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../practica2_1/" class="md-nav__link">
+      <a href="../practica2_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -265,7 +269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../practica2_2/" class="md-nav__link">
+      <a href="../practica2_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -286,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../practica2_3/" class="md-nav__link">
+      <a href="../practica2_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -304,10 +308,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../index.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 2.4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -316,6 +340,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-servidor-web-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx Servidor Web 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-servidor-web-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx Servidor Web 2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nginx Proxy Inverso
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comprobaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servidor-web-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidor web 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#servidor-web-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Servidor web 2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-con-caida-de-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación con caida de servidor
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -450,50 +572,50 @@
 <h1 id="practica-24-balanceo-de-carga-con-proxy-inverso-en-nginx">Práctica 2.4 - Balanceo de carga con proxy inverso en Nginx</h1>
 <h2 id="preparacion">Preparación</h2>
 <p>Primero vamos a conectarnos con el SSH a nuestra máquina.</p>
-<p><img alt="Screenshot_1" src="../../assets/images/Practica%202.4/Screenshot_1.png" /> </p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%202.4/Screenshot_1.png" /> </p>
 <p>Y una vez conectados, vamos a desvincular los sitios web de las prácticas anteriores, para así evitar problemas.</p>
-<p><img alt="Screenshot_2" src="../../assets/images/Practica%202.4/Screenshot_2.png" /> </p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%202.4/Screenshot_2.png" /> </p>
 <p>Este proceso lo realizaremos con el resto de máquinas también.</p>
 <h2 id="nginx-servidor-web-1">Nginx Servidor Web 1</h2>
 <p><strong>AVISO: Recordar a la hora de probar todo en el navegador desactivar la caché o utilizar ventana privada.</strong></p>
 <p>Primero, vamos a crear en el primer servidor un nuevo directorio llamado webserver1, con su correspondiente carpeta HTML.</p>
-<p><img alt="Screenshot_3" src="../../assets/images/Practica%202.4/Screenshot_3.png" /> </p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%202.4/Screenshot_3.png" /> </p>
 <p>Tras esto, vamos a crear el archivo HTML, que se verá de la siguiente manera. En el servidor 2 será igual, pero cambiando el web 1 por 2.</p>
-<p><img alt="Screenshot_4" src="../../assets/images/Practica%202.4/Screenshot_4.png" /> </p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%202.4/Screenshot_4.png" /> </p>
 <p>Una vez realizada esa configuración, vamos a crear el webserver1, en mi caso, he copiado el webserver anterior para hacerlo mas fácil, cambiando el archivo con las configuraciones nuevas.</p>
-<p><img alt="Screenshot_5" src="../../assets/images/Practica%202.4/Screenshot_5.png" /> </p>
-<p><img alt="Screenshot_6" src="../../assets/images/Practica%202.4/Screenshot_6.png" /> </p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%202.4/Screenshot_5.png" /> </p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%202.4/Screenshot_6.png" /> </p>
 <p>Una vez hecho esto, volvemos a hacer el link, y ya podremos pasar al segundo servidor.</p>
-<p><img alt="Screenshot_7" src="../../assets/images/Practica%202.4/Screenshot_7.png" /> </p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%202.4/Screenshot_7.png" /> </p>
 <h2 id="nginx-servidor-web-2">Nginx Servidor Web 2</h2>
 <p>Vamos a clonar el servidor 1, asegurándonos de que tiene una IP distinta al primero.</p>
-<p><img alt="Screenshot_8" src="../../assets/images/Practica%202.4/Screenshot_8.png" /> </p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%202.4/Screenshot_8.png" /> </p>
 <p>Como tenemos que modificar todo lo del servidor 1, cambiamos el nombre de webserver1 a webserver2</p>
-<p><img alt="Screenshot_9" src="../../assets/images/Practica%202.4/Screenshot_9.png" /> </p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%202.4/Screenshot_9.png" /> </p>
 <p>Cambiamos también el archivo HTML, de manera que se muestre que es el servidor 2
 .
-<img alt="Screenshot_10" src="../../assets/images/Practica%202.4/Screenshot_10.png" /> </p>
+<img alt="Screenshot_10" src="../assets/images/Practica%202.4/Screenshot_10.png" /> </p>
 <p>Y cambiamos el archivo de webserver2, dejando todo igual que el primero, pero cambiando el 1 por el 2. Al igual que antes, volvemos a hacer el proceso de vinculación y reiniciamos en nginx.</p>
-<p><img alt="Screenshot_11" src="../../assets/images/Practica%202.4/Screenshot_11.png" /></p>
-<p><img alt="Screenshot_12" src="../../assets/images/Practica%202.4/Screenshot_12.png" /> </p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%202.4/Screenshot_11.png" /></p>
+<p><img alt="Screenshot_12" src="../assets/images/Practica%202.4/Screenshot_12.png" /> </p>
 <h2 id="nginx-proxy-inverso">Nginx Proxy Inverso</h2>
 <p>En el caso del proxy, tenemos que configurarlo para que realice el reparto de peticiones entre ambos servidores. En sites-available, vamos a crear un archivo de configuración llamado balanceo, y dentro de se archivo, vamos a poner los siguientess datos.</p>
-<p><img alt="Screenshot_13" src="../../assets/images/Practica%202.4/Screenshot_13.png" /> </p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%202.4/Screenshot_13.png" /> </p>
 <p>En el bloque de upstream, hemos puesto que vaya a uno de esos dos servidores de manera aleatoria, y esas ip pertenecen cada una a uno de los dos servidores que hemos configurado. Hacemos el link correspondiente, y reiniciamos de nuevo, tras esta configuración, solo nos queda cambiar el archivo hosts de nuestra máquina principal y podremos pasar a realizar las comprobaciones.</p>
-<p><img alt="Screenshot_14" src="../../assets/images/Practica%202.4/Screenshot_14.png" /> </p>
-<p><img alt="Screenshot_15" src="../../assets/images/Practica%202.4/Screenshot_15.png" /> </p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%202.4/Screenshot_14.png" /> </p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%202.4/Screenshot_15.png" /> </p>
 <h2 id="comprobaciones">Comprobaciones</h2>
 <p>Vamos a realizar las comprobaciones, tras poner el nombre de nuestra web, nos va redirigiendo a uno u otro de manera aleatoria, además, comprobamos con las herramientas de desarrollador que se muestra el header que pusimos.</p>
 <h3 id="servidor-web-1">Servidor web 1</h3>
-<p><img alt="Screenshot_18" src="../../assets/images/Practica%202.4/Screenshot_18.png" /> </p>
-<p><img alt="Screenshot_20" src="../../assets/images/Practica%202.4/Screenshot_20.png" /> </p>
+<p><img alt="Screenshot_18" src="../assets/images/Practica%202.4/Screenshot_18.png" /> </p>
+<p><img alt="Screenshot_20" src="../assets/images/Practica%202.4/Screenshot_20.png" /> </p>
 <h3 id="servidor-web-2">Servidor web 2</h3>
-<p><img alt="Screenshot_19" src="../../assets/images/Practica%202.4/Screenshot_19.png" /> </p>
-<p><img alt="Screenshot_21" src="../../assets/images/Practica%202.4/Screenshot_21.png" /> </p>
+<p><img alt="Screenshot_19" src="../assets/images/Practica%202.4/Screenshot_19.png" /> </p>
+<p><img alt="Screenshot_21" src="../assets/images/Practica%202.4/Screenshot_21.png" /> </p>
 <h2 id="comprobacion-con-caida-de-servidor">Comprobación con caida de servidor</h2>
 <p>Tras cerrar el Servidor número 1, sigo refrescando la página, y ahora solo aparece el servidor número 2, por lo que todo está correcto.</p>
-<p><img alt="Screenshot_22" src="../../assets/images/Practica%202.4/Screenshot_22.png" /> </p>
-<p><img alt="Screenshot_19" src="../../assets/images/Practica%202.4/Screenshot_19.png" /> </p>
+<p><img alt="Screenshot_22" src="../assets/images/Practica%202.4/Screenshot_22.png" /> </p>
+<p><img alt="Screenshot_19" src="../assets/images/Practica%202.4/Screenshot_19.png" /> </p>
 <h1 id="cuestiones">Cuestiones</h1>
 <h2 id="cuestion-1">Cuestión 1</h2>
 <blockquote>
@@ -563,10 +685,10 @@ una de las webs de prácticas anteriores.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
