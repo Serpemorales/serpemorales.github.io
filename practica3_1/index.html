@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica2_2/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica3_1/">
       
       
-        <link rel="prev" href="../practica2_1/">
+        <link rel="prev" href="../practica2_5/">
       
-      
-        <link rel="next" href="../practica2_3/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.2 - Web de Sergio</title>
+        <title>Práctica 3.1 - Web de Sergio</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-22-autenticacion-en-nginx" class="md-skip">
+        <a href="#practica-31-instalacion-de-tomcat" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.2
+              Práctica 3.1
             
           </span>
         </div>
@@ -268,30 +266,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.2
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica2_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -300,80 +278,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-paquetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobación de Paquetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Probando la nueva configuración
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combinacion-de-la-autenticacion-basica-con-restriccion-por-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combinación de la autenticación básica con restricción por IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestiones finales
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,10 +350,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../practica3_1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 3.1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -458,6 +382,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-de-tomcat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación de Tomcat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue-manual-mediante-la-gui-de-administracion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Despliegue manual mediante la GUI de administración
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue-con-maven" class="md-nav__link">
+    <span class="md-ellipsis">
+      Despliegue con Maven
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuestiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuestiones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -497,54 +477,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comprobacion-de-paquetes" class="md-nav__link">
+  <a href="#instalacion-de-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobación de Paquetes
+      Instalación de Tomcat
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
+  <a href="#despliegue-manual-mediante-la-gui-de-administracion" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web
+      Despliegue manual mediante la GUI de administración
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
+  <a href="#despliegue-con-maven" class="md-nav__link">
     <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica
+      Despliegue con Maven
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
+  <a href="#cuestiones" class="md-nav__link">
     <span class="md-ellipsis">
-      Probando la nueva configuración
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combinacion-de-la-autenticacion-basica-con-restriccion-por-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combinación de la autenticación básica con restricción por IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestiones finales
+      Cuestiones
     </span>
   </a>
   
@@ -565,110 +527,55 @@
                   
 
 
-<h1 id="practica-22-autenticacion-en-nginx">Práctica 2.2 - Autenticación en Nginx</h1>
-<h2 id="comprobacion-de-paquetes">Comprobación de Paquetes</h2>
-<p>Primero, comprobamos que los paquetes necesarios están instalados. En mi caso lo están.</p>
-<p><img alt="Screenshot_1" src="../assets/images/Practica%202.2/Screenshot_1.png" /></p>
-<h2 id="creacion-de-usuarios-y-contrasenas-para-el-acceso-web">Creación de usuarios y contraseñas para el acceso web</h2>
-<p>Vamos a crear un archivo oculto que se llama <strong><em>.htpasswd</em></strong>. Lo vamos a crear en el directorio de configuración <em>/etc/nginx</em> donde se pueda guardar el usuario y la contraseña. Como se puede repetir con tantos usuarios como haga falta, lo he realizado con mi nombre y mi apellido.</p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%202.2/Screenshot_2.png" />
-<img alt="Screenshot_3" src="../assets/images/Practica%202.2/Screenshot_3.png" />
-<img alt="Screenshot_4" src="../assets/images/Practica%202.2/Screenshot_4.png" /></p>
-<p>Compruebo que todo esté correcto.</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%202.2/Screenshot_5.png" /></p>
-<h2 id="configurando-el-servidor-nginx-para-usar-autenticacion-basica">Configurando el servidor Nginx para usar autenticación básica</h2>
-<p>Lo primero va a ser configurar nuestra web para añadir la directiva <em>auth_basic</em> y así proteger la web.</p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%202.2/Screenshot_6.png" /></p>
-<p>Una vez guardada la configuración, reiniciamos el servidor</p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%202.2/Screenshot_7.png" /></p>
-<h2 id="probando-la-nueva-configuracion">Probando la nueva configuración</h2>
-<p>Tras esto, he comprobado que desde mi máquina física he podido acceder al sitio y me ha pedido autentificación</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%202.2/Screenshot_8.png" /></p>
-<p>Y si cancelo la autentificación sale el <strong>error 401</strong></p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%202.2/Screenshot_9.png" /></p>
-<p>Ahora, para la <em>Tarea 1</em>, he intentado entrar con un usuario erróneo, y luego con uno correcto.</p>
-<p>Accedo a los log de acceso y error para que se vean ambos intentos.</p>
-<p>En el de acceso vemos como nos muestra que no hay ningún problema</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%202.2/Screenshot_10.png" /></p>
-<p>Mientras que en el de error vemos que nos dice que no se ha encontrado ese usuario en el archivo que creamos, dando lugar a que no pueda autentificarse.</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%202.2/Screenshot_11.png" /></p>
-<p>Después hemos tenido que configurar para que el servidor solo bloquee cierta parte de la web. En nuestro caso, no podemos bloquear solo contact, por lo que hice el ejemplo con el propio index.</p>
-<p><img alt="Screenshot_12" src="../assets/images/Practica%202.2/Screenshot_12.png" /></p>
-<h2 id="combinacion-de-la-autenticacion-basica-con-restriccion-por-ip">Combinación de la autenticación básica con restricción por IP</h2>
-<p>También tenemos la opción de permitir o denegar la entrada a la web a partir de las IP. con las directivas allow y deny. Además, podemos también hacer que sea necesario tanto autentificarse con el usuario como tener la IP correcta.</p>
-<p>En la Tarea 1 de esta sección, teníamos que prohibir el acceso con la IP de la máquina anfitriona, y comprobar que el acceso fuese denegado.</p>
-<p><img alt="Screenshot_13" src="../assets/images/Practica%202.2/Screenshot_13.png" /></p>
-<p>Y efectivamente, nos sale un <strong>error 403</strong> cuando intentamos entrar</p>
-<p><img alt="Screenshot_14" src="../assets/images/Practica%202.2/Screenshot_14.png" /></p>
-<p>También podemos ver el propio mensaje de error en el <strong><em>error.log</em></strong></p>
-<p><img alt="Screenshot_15" src="../assets/images/Practica%202.2/Screenshot_15.png" /></p>
-<p>Para finalizar, configuramos para que necesitemos acceder desde la máquina anfitriona tanto con una IP válida como con el usuario, ambas cosas a la vez. Tras poner las directivas, lo compruebo y funciona perfectamente.</p>
-<p><img alt="Screenshot_16" src="../assets/images/Practica%202.2/Screenshot_16.png" /></p>
-<p><img alt="Screenshot_17" src="../assets/images/Practica%202.2/Screenshot_17.png" /></p>
-<h2 id="cuestiones-finales">Cuestiones finales</h2>
-<p><strong>Cuestion 1</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, equivocándome al poner el usuario y contraseña. ¿Podré acceder? ¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy all;    
-    deny  172.1.10.6;
-    allow 172.1.10.15;
-    allow 172.1.3.14;
-    deny  all;
-    auth_basic &quot;Cuestión final 1&quot;;
-    auth_basic_user_file conf/htpasswd;
-}
-</code></pre>
-<p>No se podrá, porque nos está pidiendo que tenemos que utilizar tanto una IP correcta como un usuario.</p>
-<p><strong>Cuestion 2</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, introduciendo correctamente usuario y contraseña. ¿Podré acceder?¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy all;    
-    deny  all;
-    deny  172.1.10.6;
-    allow 172.1.10.15;
-    allow 172.1.3.14;
-
-    auth_basic &quot;Cuestión final 2: The revenge&quot;;
-    auth_basic_user_file conf/htpasswd;
-    } 
-</code></pre>
-<p>Si podremos acceder, ya que pese al deny all, se permite el acceso a nuestra IP, y además, hemos introducido el usuario y contraseña de manera correcta.</p>
-<p><strong>Cuestion 3</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, introduciendo correctamente usuario y contraseña. ¿Podré acceder?¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy any;    
-    deny  172.1.10.6;
-    deny 172.1.10.15;
-    allow 172.1.3.14;
-
-    auth_basic &quot;Cuestión final 3: The final combat&quot;;
-    auth_basic_user_file conf/htpasswd;
-}
-</code></pre>
-<p>No podremos acceder, puesto que aunque la directiva sea satisfy any, nuestra IP está denegada, y esa restricción tiene prioridad y bloquea el acceso.</p>
-<p><strong>Cuestion 4</strong></p>
-<p>Supongamos que quiero restringir el acceso al directorio de proyectos porque es muy secreto, eso quiere decir añadir autenticación básica a la sección de proyectos.</p>
-<p>Completa la configuración para conseguirlo:</p>
-<pre><code>    server {
-        listen 80;
-        listen [::]:80;
-        root /var/www/freewebsitetemplates.com/preview/space-science;
-        index index.html index.htm index.nginx-debian.html;
-        server_name freewebsitetemplates.com www.freewebsitetemplates.com;
-        location              {
-
-            try_files $uri $uri/ =404;
-        }
-        location /Proyectos {
-            auth_basic &quot;Área restringida&quot;;
-            auth_basic_user_file /etc/nginx/.htpasswd;
-            try_files $uri $uri/ =404;
-        }
-    }
-</code></pre>
+<h1 id="practica-31-instalacion-de-tomcat">Práctica 3.1: Instalación de Tomcat</h1>
+<h2 id="instalacion-de-tomcat">Instalación de Tomcat</h2>
+<p>Lo primero va a ser instalar nuestro Tomcat, la manera más recomendable es con el administrador de paquetes, siguiendo algún tutorial online. No debería darnos demasiados problemas, hasta comprobar que se ha instalado correctamente</p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%203.1/Screenshot_1.png" /> </p>
+<p>Una vez instalado, vamos a nuestra URL para ver que se visualiza de forma correcta, entrando con el usuario y contraseña que hemos elegido.</p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%203.1/Screenshot_2.png" /> </p>
+<h2 id="despliegue-manual-mediante-la-gui-de-administracion">Despliegue manual mediante la GUI de administración</h2>
+<p>Ahora vamos a probar a realizar un despliegue manual de una aplicación empaquetada en formato WAR, para ello, en la página que hemos visto antes, buscamos la sección que permite desplegar el WAR, seleccionando nuestro archivo</p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%203.1/Screenshot_3.png" /> </p>
+<p>Tras esto, le damos a desplegar, y ya nos saldrá como un directorio más al que tendremos acceso</p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%203.1/Screenshot_4.png" /> </p>
+<h2 id="despliegue-con-maven">Despliegue con Maven</h2>
+<p><strong>Instalación de Maven</strong></p>
+<p>Ahora vamos a realizar un despliegue con Maven, pero primero, vamos a instalarlo. Yo lo haré mediante el gestor de paquetes APT, y para ello, empezaremos con una actualización de los repositorios </p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%203.1/Screenshot_5.png" /> </p>
+<p>Después, si ha ido todo correcto, vamos a instalar Maven</p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%203.1/Screenshot_6.png" /> </p>
+<p>y para finalizar, vamos a comprobar que se instaló de manera adecuada con el siguiente comando</p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%203.1/Screenshot_7.png" /> </p>
+<p><strong>Configuración de Maven</strong></p>
+<p>Para que podamos realizar los despliegues, vamos a tener que hacer una correcta configuración.</p>
+<p>Vamos a comenzar añadiendo roles a nuestro usuario en Tomcat, es importante y bastante recomendable que los roles manager-script/manager-jmx no los tenga el mismo usuario que tenga el rol de manager-gui, por eso en mi caso, voy a separarlos.</p>
+<p>En el archivo tomcat-users.xml, vamos a modificar de manera que quede así</p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%203.1/Screenshot_8.png" /> </p>
+<p>Tras esto, nos toca editar el archivo de maven, dentro de la carpeta, estará settings.xml, aquí tenemos que poner un identificador para el servidor sobre el que vamos a desplegar y las credenciales, importante que todo sea dentro del bloque servers del XML</p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%203.1/Screenshot_9.png" /> </p>
+<p>Por último, vamos a modificar el POM del proyecto para hacer referencia a que el despliegue se realice con el plugin de Maven para Tomcat, en mi caso, he utilizado el de rock paper scissors que nos ha proporcionado la propia práctica. Clonando el repositorio y modificando su correspondiente archivo POM, añadiendo un bloque nuevo al final.</p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%203.1/Screenshot_10.png" /> </p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%203.1/Screenshot_11.png" /> </p>
+<p><strong>Despliegue</strong></p>
+<p>Una vez hecho esto, reiniciamos tomcat para que pille bien las configuraciones, y así nos preparamos para desplegar nuestra aplicación</p>
+<p><img alt="Screenshot_12" src="../assets/images/Practica%203.1/Screenshot_12.png" /> </p>
+<p>Vamos a utilizar el comando <code>mvn tomcat7:deploy</code></p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%203.1/Screenshot_13.png" /> </p>
+<p>Si vemos que hace deploying en nuestra url y que pone BUILD SUCCESS, es porque se ha desplegado con éxito. Podemos ir a la pagina de Tomcat para ver que efectivamente, esta ahí</p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%203.1/Screenshot_14.png" /> </p>
+<p>Y si pulsamos, está de manera totalmente funcional</p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%203.1/Screenshot_15.png" /> </p>
+<h2 id="cuestiones">Cuestiones</h2>
+<p><strong>Cuestión 1</strong></p>
+<blockquote>
+<p>Habéis visto que los archivos de configuración que hemos tocado
+contienen contraseñas en texto plano, por lo que cualquiera con acceso
+a ellos obtendría las credenciales de nuestras herramientas.</p>
+<p>En principio esto representa un gran riesgo de seguridad, ¿sabrías
+razonar o averiguar por qué esto está diseñado de esta forma?</p>
+</blockquote>
+<p>El diseño de herramientas como Tomcat asume que la seguridad de los archivos de configuración recae en las prácticas de administración del sistema y los permisos del entorno. Por ejemplo, en Tomcat se espera que los archivos de configuración, como <code>tomcat-users.xml</code>, sean accesibles únicamente por el usuario que ejecuta el servidor y por root</p>
+<p>Mantener contraseñas en texto plano simplifica la configuración y asegura la compatibilidad con estándares, pero también se basa en que el administrador del sistema configure permisos estrictos y garantice que el entorno sea seguro.</p>
 
 
 
