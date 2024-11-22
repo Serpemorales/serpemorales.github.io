@@ -102,7 +102,7 @@ Al igual que antes, vamos a dar los permisos adecuados para la carpeta, para que
 
 ![Screenshot_28](../assets/images/Practica%203.4/Screenshot_28.png) 
 
-Ahora vamos a crear y activar nuestro entorno virtual de la misma manera que antes. Además, una vez activado, vamos a instalar las dependecias del proyecto de la aplicación.
+Ahora vamos a crear y activar nuestro entorno virtual de la misma manera que antes. Además, una vez activado, vamos a instalar las dependencias del proyecto de la aplicación.
 
 ![Screenshot_29](../assets/images/Practica%203.4/Screenshot_29.png) 
 
