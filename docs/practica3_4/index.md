@@ -108,7 +108,7 @@ Ahora vamos a crear y activar nuestro entorno virtual de la misma manera que ant
 
 ![Screenshot_30](../assets/images/Practica%203.4/Screenshot_30.png) 
 
-Ya tras esto, vamos a instalar las dependecias restantes necesarias.
+Ya tras esto, vamos a instalar las dependencias restantes necesarias.
 
 ![Screenshot_31](../assets/images/Practica%203.4/Screenshot_31.png) 
 
