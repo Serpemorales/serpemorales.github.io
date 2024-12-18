@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica2_2/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica2_6/">
       
       
-        <link rel="prev" href="../practica2_1/">
+        <link rel="prev" href="../practica2_5/">
       
       
-        <link rel="next" href="../practica2_3/">
+        <link rel="next" href="../practica3_1/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Práctica 2.2 - Autenticación en Nginx - Web de Sergio</title>
+        <title>Práctica Ampliación - Configuración de un servidor Nginx con Hosts Virtuales y directorios de usuario - Web de Sergio</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-22-autenticacion-en-nginx" class="md-skip">
+        <a href="#practica-de-ampliacion" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.2 - Autenticación en Nginx
+              Práctica Ampliación - Configuración de un servidor Nginx con Hosts Virtuales y directorios de usuario
             
           </span>
         </div>
@@ -305,30 +305,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.2 - Autenticación en Nginx
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica2_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -337,80 +317,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-paquetes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobación de Paquetes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Probando la nueva configuración
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combinacion-de-la-autenticacion-basica-con-restriccion-por-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Combinación de la autenticación básica con restricción por IP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestiones finales
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -483,10 +389,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../practica2_6/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica Ampliación - Configuración de un servidor Nginx con Hosts Virtuales y directorios de usuario
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -495,6 +419,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#practica-de-ampliacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      PRACTICA DE AMPLIACIÓN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PRACTICA DE AMPLIACIÓN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-instalacion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Instalación de Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-creacion-de-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Creación de usuarios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-estructura-de-carpetas" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Estructura de carpetas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-configuracion-de-los-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Configuración de los Host
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-comprobaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Comprobaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Comprobaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-de-alicia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web de Alicia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web-de-momo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web de Momo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -659,8 +685,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -669,56 +693,86 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#comprobacion-de-paquetes" class="md-nav__link">
+  <a href="#practica-de-ampliacion" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobación de Paquetes
+      PRACTICA DE AMPLIACIÓN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PRACTICA DE AMPLIACIÓN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-instalacion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Instalación de Nginx
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-creacion-de-usuarios" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web
+      2. Creación de usuarios
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-estructura-de-carpetas" class="md-nav__link">
     <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica
+      3. Estructura de carpetas
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-configuracion-de-los-host" class="md-nav__link">
     <span class="md-ellipsis">
-      Probando la nueva configuración
+      4. Configuración de los Host
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#combinacion-de-la-autenticacion-basica-con-restriccion-por-ip" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#5-comprobaciones" class="md-nav__link">
     <span class="md-ellipsis">
-      Combinación de la autenticación básica con restricción por IP
+      5. Comprobaciones
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Comprobaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-de-alicia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Web de Alicia
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#web-de-momo" class="md-nav__link">
     <span class="md-ellipsis">
-      Cuestiones finales
+      Web de Momo
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -737,110 +791,68 @@
                   
 
 
-<h1 id="practica-22-autenticacion-en-nginx">Práctica 2.2 - Autenticación en Nginx</h1>
-<h2 id="comprobacion-de-paquetes">Comprobación de Paquetes</h2>
-<p>Primero, comprobamos que los paquetes necesarios están instalados. En mi caso lo están.</p>
-<p><img alt="Screenshot_1" src="../assets/images/Practica%202.2/Screenshot_1.png" /></p>
-<h2 id="creacion-de-usuarios-y-contrasenas-para-el-acceso-web">Creación de usuarios y contraseñas para el acceso web</h2>
-<p>Vamos a crear un archivo oculto que se llama <strong><em>.htpasswd</em></strong>. Lo vamos a crear en el directorio de configuración <em>/etc/nginx</em> donde se pueda guardar el usuario y la contraseña. Como se puede repetir con tantos usuarios como haga falta, lo he realizado con mi nombre y mi apellido.</p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%202.2/Screenshot_2.png" />
-<img alt="Screenshot_3" src="../assets/images/Practica%202.2/Screenshot_3.png" />
-<img alt="Screenshot_4" src="../assets/images/Practica%202.2/Screenshot_4.png" /></p>
-<p>Compruebo que todo esté correcto.</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%202.2/Screenshot_5.png" /></p>
-<h2 id="configurando-el-servidor-nginx-para-usar-autenticacion-basica">Configurando el servidor Nginx para usar autenticación básica</h2>
-<p>Lo primero va a ser configurar nuestra web para añadir la directiva <em>auth_basic</em> y así proteger la web.</p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%202.2/Screenshot_6.png" /></p>
-<p>Una vez guardada la configuración, reiniciamos el servidor</p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%202.2/Screenshot_7.png" /></p>
-<h2 id="probando-la-nueva-configuracion">Probando la nueva configuración</h2>
-<p>Tras esto, he comprobado que desde mi máquina física he podido acceder al sitio y me ha pedido autentificación</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%202.2/Screenshot_8.png" /></p>
-<p>Y si cancelo la autentificación sale el <strong>error 401</strong></p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%202.2/Screenshot_9.png" /></p>
-<p>Ahora, para la <em>Tarea 1</em>, he intentado entrar con un usuario erróneo, y luego con uno correcto.</p>
-<p>Accedo a los log de acceso y error para que se vean ambos intentos.</p>
-<p>En el de acceso vemos como nos muestra que no hay ningún problema</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%202.2/Screenshot_10.png" /></p>
-<p>Mientras que en el de error vemos que nos dice que no se ha encontrado ese usuario en el archivo que creamos, dando lugar a que no pueda autentificarse.</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%202.2/Screenshot_11.png" /></p>
-<p>Después hemos tenido que configurar para que el servidor solo bloquee cierta parte de la web. En nuestro caso, no podemos bloquear solo contact, por lo que hice el ejemplo con el propio index.</p>
-<p><img alt="Screenshot_12" src="../assets/images/Practica%202.2/Screenshot_12.png" /></p>
-<h2 id="combinacion-de-la-autenticacion-basica-con-restriccion-por-ip">Combinación de la autenticación básica con restricción por IP</h2>
-<p>También tenemos la opción de permitir o denegar la entrada a la web a partir de las IP. con las directivas allow y deny. Además, podemos también hacer que sea necesario tanto autentificarse con el usuario como tener la IP correcta.</p>
-<p>En la Tarea 1 de esta sección, teníamos que prohibir el acceso con la IP de la máquina anfitriona, y comprobar que el acceso fuese denegado.</p>
-<p><img alt="Screenshot_13" src="../assets/images/Practica%202.2/Screenshot_13.png" /></p>
-<p>Y efectivamente, nos sale un <strong>error 403</strong> cuando intentamos entrar</p>
-<p><img alt="Screenshot_14" src="../assets/images/Practica%202.2/Screenshot_14.png" /></p>
-<p>También podemos ver el propio mensaje de error en el <strong><em>error.log</em></strong></p>
-<p><img alt="Screenshot_15" src="../assets/images/Practica%202.2/Screenshot_15.png" /></p>
-<p>Para finalizar, configuramos para que necesitemos acceder desde la máquina anfitriona tanto con una IP válida como con el usuario, ambas cosas a la vez. Tras poner las directivas, lo compruebo y funciona perfectamente.</p>
-<p><img alt="Screenshot_16" src="../assets/images/Practica%202.2/Screenshot_16.png" /></p>
-<p><img alt="Screenshot_17" src="../assets/images/Practica%202.2/Screenshot_17.png" /></p>
-<h2 id="cuestiones-finales">Cuestiones finales</h2>
-<p><strong>Cuestion 1</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, equivocándome al poner el usuario y contraseña. ¿Podré acceder? ¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy all;    
-    deny  172.1.10.6;
-    allow 172.1.10.15;
-    allow 172.1.3.14;
-    deny  all;
-    auth_basic &quot;Cuestión final 1&quot;;
-    auth_basic_user_file conf/htpasswd;
-}
-</code></pre>
-<p>No se podrá, porque nos está pidiendo que tenemos que utilizar tanto una IP correcta como un usuario.</p>
-<p><strong>Cuestion 2</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, introduciendo correctamente usuario y contraseña. ¿Podré acceder?¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy all;    
-    deny  all;
-    deny  172.1.10.6;
-    allow 172.1.10.15;
-    allow 172.1.3.14;
+  <h1>Práctica Ampliación - Configuración de un servidor Nginx con Hosts Virtuales y directorios de usuario</h1>
 
-    auth_basic &quot;Cuestión final 2: The revenge&quot;;
-    auth_basic_user_file conf/htpasswd;
-    } 
-</code></pre>
-<p>Si podremos acceder, ya que pese al deny all, se permite el acceso a nuestra IP, y además, hemos introducido el usuario y contraseña de manera correcta.</p>
-<p><strong>Cuestion 3</strong></p>
-<p>Supongamos que yo soy el cliente con la IP 172.1.10.15 e intento acceder al directorio <code>web_muy_guay</code> de mi sitio web, introduciendo correctamente usuario y contraseña. ¿Podré acceder?¿Por qué?</p>
-<pre><code>    location /web_muy_guay {
-    #...
-    satisfy any;    
-    deny  172.1.10.6;
-    deny 172.1.10.15;
-    allow 172.1.3.14;
-
-    auth_basic &quot;Cuestión final 3: The final combat&quot;;
-    auth_basic_user_file conf/htpasswd;
-}
-</code></pre>
-<p>No podremos acceder, puesto que aunque la directiva sea satisfy any, nuestra IP está denegada, y esa restricción tiene prioridad y bloquea el acceso.</p>
-<p><strong>Cuestion 4</strong></p>
-<p>Supongamos que quiero restringir el acceso al directorio de proyectos porque es muy secreto, eso quiere decir añadir autenticación básica a la sección de proyectos.</p>
-<p>Completa la configuración para conseguirlo:</p>
-<pre><code>    server {
-        listen 80;
-        listen [::]:80;
-        root /var/www/freewebsitetemplates.com/preview/space-science;
-        index index.html index.htm index.nginx-debian.html;
-        server_name freewebsitetemplates.com www.freewebsitetemplates.com;
-        location              {
-
-            try_files $uri $uri/ =404;
-        }
-        location /Proyectos {
-            auth_basic &quot;Área restringida&quot;;
-            auth_basic_user_file /etc/nginx/.htpasswd;
-            try_files $uri $uri/ =404;
-        }
-    }
-</code></pre>
+<h2 id="practica-de-ampliacion">PRACTICA DE AMPLIACIÓN</h2>
+<p>En esta práctica, vamos a configurar un servidor Nginx con unos hosts virtuales en los que podamos alojar distintos sitios webs pero utilizando solo un servidor. También, tenemos que lograr que cada host virtual apunte al directorio <code>public_html</code> de distintos usuarios en nuestro sistema operativo. Así, cada uno podrá gestionar su web desde su carpeta personal.</p>
+<p>Antes de comenzar, vamos a conectarnos a nuestra máquina virtual mediante <strong>SSH</strong>.</p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%202.6/Screenshot_1.png" /></p>
+<h3 id="1-instalacion-de-nginx">1. Instalación de Nginx</h3>
+<p>El primer paso sería instalar Nginx. En mi caso personal, ya tengo todo instalado de prácticas anteriores, y se puede ver en la <strong>práctica 2.1</strong> el paso a paso. Aún así, en resumidas cuentas, sería tan sencillo instalarlo con el gestor de paquetes utilizando los siguientes comandos:</p>
+<p><code>sudo apt-get update</code></p>
+<p><code>sudo apt-get install nginx</code></p>
+<p>Para comenzar todo, voy a comprobar que mi Nginx funciona correctamente, para ello miramos su <em>status</em> y vemos si lo podemos ver en el navegador web.</p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%202.6/Screenshot_2.png" /></p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%202.6/Screenshot_3.png" /></p>
+<h3 id="2-creacion-de-usuarios">2. Creación de usuarios</h3>
+<p>Para poder realizar la práctica, vamos a tener que crear al menos 2 usuarios distintos. Para ello, utilizando el comando <em>useradd</em> como veremos en la imagen, creamos dos usuarios, y les asignamos una contraseña con el comando <em>passwd</em></p>
+<p>En las imágenes podemos observar el proceso, el cual es sencillo.</p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%202.6/Screenshot_4.png" /></p>
+<p>En mi caso, he creado los usuarios <strong>momo</strong> y <strong>alicia</strong>, a parte del mio personal que ya estaba creado.</p>
+<h3 id="3-estructura-de-carpetas">3. Estructura de carpetas</h3>
+<p>Ahora que tenemos nuestros usuarios creados, tenemos que crearle a cada uno una carpeta <em>public_html</em>, asegurándonos de darle los permisos necesarios para que Nginx pueda acceder a estas, pero sin hacer que el usuario pierda sus permisos. Para ello, vamos a loguearnos con los nuevos usuarios, con el comando <em>su usuario</em></p>
+<p>Para el usuario <strong>momo</strong>, sería de la siguiente manera</p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%202.6/Screenshot_5.png" /></p>
+<p>Como vemos, se ha creado el directorio, y con los correspondientes comandos que se ven en la imagen, se pueden poner los permisos.</p>
+<p>Vamos a realizar lo mismo, pero con el usuario <strong>alicia</strong></p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%202.6/Screenshot_6.png" /></p>
+<p>Una vez creadas las carpetas y asignados los correspondientes permisos, vamos con cada usuario a crear dentro de esta un archivo <strong>index.html</strong> donde realizaremos una web sencilla. En el caso de <strong>momo</strong>, ha sido esta sencilla web</p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%202.6/Screenshot_7.png" /></p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%202.6/Screenshot_8.png" /></p>
+<p>Y para el caso del usuario <strong>alicia</strong>, hemos repetido el mismo proceso, de manera que nos queda la web de la siguiente manera</p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%202.6/Screenshot_9.png" /></p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%202.6/Screenshot_10.png" /></p>
+<p>Aprovechando que estamos aún con los usuarios, vamos a crear para cada uno de ellos el certificado de seguridad para la web. Para ello, tenemos que irnos a nuestro usuario principal, <strong>sergio</strong> en mi caso, y generarlos con el siguiente comando.</p>
+<p><code>sudo openssl req -x509 -newkey rsa:4096 -keyout /etc/ssl/private/usuario.pem -out /etc/ssl/certs/usuario.pem -sha256 -days 365 -nodes</code></p>
+<p>El de <strong>momo</strong> lo generamos primero, cuando nos pregunte common name, ponemos el de nuestra web.</p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%202.6/Screenshot_11.png" /></p>
+<p>Después, creamos el de <strong>alicia</strong>, así cada usuario tendrá su propio certificado de seguridad.</p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%202.6/Screenshot_14.png" /></p>
+<p>Una vez realizado esto, seguimos con la configuración de los host</p>
+<h3 id="4-configuracion-de-los-host">4. Configuración de los Host</h3>
+<p>Para empezar a configurar, tenemos que trasladarnos a la carpeta <code>sites-available</code> de nginx.</p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%202.6/Screenshot_13.png" /></p>
+<p>Una vez dentro, vamos a crear dos archivos, uno será para <strong>momo.es</strong> de la usuaria <strong>momo</strong>, el otro será para <strong>alicia.es</strong> de la usuaria <strong>alicia</strong>. Tras realizarlos, quedarían de esta manera.</p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%202.6/Screenshot_15.png" /></p>
+<p>En mi caso, como ya he generado los certificados, he realizado también la re-dirección a <code>HTTPS</code>. Si nos fijamos en la imagen, el root es el <em>public_html</em> que realizamos anteriormente, mientras que el certificado ssl son los que he generado en el paso anterior. Una vez configurado el primero, hacemos lo mismo con el segundo</p>
+<p><img alt="Screenshot_16" src="../assets/images/Practica%202.6/Screenshot_15.png" /></p>
+<p>Para que los hosts se activen y funcionen, tenemos que realizar el enlace entre <code>sites-available</code> y <code>sites-enabled</code>, para ello, simplemente utilizamos el comando <em>ln</em> de la siguiente manera.</p>
+<p><img alt="Screenshot_17" src="../assets/images/Practica%202.6/Screenshot_17.png" /></p>
+<p>Una vez realizada, vamos a reiniciar Nginx para ver que todo funciona correctamente y se guarden los cambios.</p>
+<p><img alt="Screenshot_18" src="../assets/images/Practica%202.6/Screenshot_18.png" /></p>
+<h3 id="5-comprobaciones">5. Comprobaciones</h3>
+<p>Ahora ya tenemos nuestras webs listas, pero si queremos visualizarlas correctamente, tendremos que añadirlas a nuestro archivo <code>host</code> del sistema operativo, utilizando la ip de nuestra máquina virtual y añadiendo las webs de nuestros usuarios.</p>
+<p><img alt="Screenshot_19" src="../assets/images/Practica%202.6/Screenshot_19.png" /></p>
+<p>Ahora ya podemos visitar las webs, ambas nos advertirán de que hay riesgo potencial de seguridad. Al ser una práctica, no tenemos que preocuparnos de esto, por lo que avanzaremos hacia la web, viendo que se ve lo que hicimos en el <code>public_html</code>. Además, para una comprobación mas exacta, podemos ir a ver los certificados, viendo que cada web tiene el suyo tal y como los generamos anteriormente.</p>
+<h4 id="web-de-alicia">Web de Alicia</h4>
+<p><img alt="Screenshot_20" src="../assets/images/Practica%202.6/Screenshot_20.png" /></p>
+<p><img alt="Screenshot_21" src="../assets/images/Practica%202.6/Screenshot_21.png" /></p>
+<p><img alt="Screenshot_22" src="../assets/images/Practica%202.6/Screenshot_22.png" /></p>
+<h4 id="web-de-momo">Web de Momo</h4>
+<p><img alt="Screenshot_23" src="../assets/images/Practica%202.6/Screenshot_23.png" /></p>
+<p><img alt="Screenshot_24" src="../assets/images/Practica%202.6/Screenshot_24.png" /></p>
+<p><img alt="Screenshot_25" src="../assets/images/Practica%202.6/Screenshot_25.png" /></p>
+<p>Como podemos comprobar, ambas se ven correctamente y tienen su certificado, por lo que todo ha salido bien, y con ello, concluye la práctica.</p>
 
 
 
