@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica2_5/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica4_1/">
       
       
-        <link rel="prev" href="../practica2_4/">
+        <link rel="prev" href="../practica3_4/">
       
-      
-        <link rel="next" href="../practica2_6/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX - Web de Sergio</title>
+        <title>Práctica 4.1 - Configuración de un servidor DNS - Web de Sergio</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx" class="md-skip">
+        <a href="#practica-41-configuracion-de-un-servidor-dns" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+              Práctica 4.1 - Configuración de un servidor DNS
             
           </span>
         </div>
@@ -247,19 +245,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -273,7 +269,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Unidad 2
@@ -368,30 +364,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica2_5/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,95 +376,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-certificado-autofirmado" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de certificado autofirmado
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-ssl-en-el-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración SSL en el Proxy Inverso
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobaciones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#redireccion-forzosa-a-https" class="md-nav__link">
-    <span class="md-ellipsis">
-      Redirección forzosa a HTTPS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestiones finales
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cuestiones finales">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cuestion-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestion 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cuestion-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestion 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -654,17 +541,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -678,7 +567,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Unidad 4
@@ -689,10 +578,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../practica4_1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 4.1 - Configuración de un servidor DNS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -701,6 +610,116 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#atencion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ATENCIÓN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalacion-del-servidor-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalación del servidor DNS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-del-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración del servidor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-namedconfoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración de named.conf.options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-de-namedconflocal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuración de named.conf.local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-del-archivo-de-zona" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación del archivo de zona
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-del-archivo-de-zona-para-la-resolucion-inversa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación del archivo de zona para la resolución inversa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-configuraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de configuraciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-las-resoluciones-y-de-las-consultas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de las resoluciones y de las consultas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuestiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuestiones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -748,71 +767,92 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-certificado-autofirmado" class="md-nav__link">
+  <a href="#atencion" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de certificado autofirmado
+      ATENCIÓN
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-ssl-en-el-proxy-inverso" class="md-nav__link">
+  <a href="#instalacion-del-servidor-dns" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración SSL en el Proxy Inverso
+      Instalación del servidor DNS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+  <a href="#configuracion-del-servidor" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones
+      Configuración del servidor
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#redireccion-forzosa-a-https" class="md-nav__link">
+  <a href="#configuracion-de-namedconfoptions" class="md-nav__link">
     <span class="md-ellipsis">
-      Redirección forzosa a HTTPS
+      Configuración de named.conf.options
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cuestiones-finales" class="md-nav__link">
+  <a href="#configuracion-de-namedconflocal" class="md-nav__link">
     <span class="md-ellipsis">
-      Cuestiones finales
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cuestiones finales">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cuestion-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cuestion 1
+      Configuración de named.conf.local
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#cuestion-2" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#creacion-del-archivo-de-zona" class="md-nav__link">
     <span class="md-ellipsis">
-      Cuestion 2
+      Creación del archivo de zona
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-del-archivo-de-zona-para-la-resolucion-inversa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creación del archivo de zona para la resolución inversa
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-configuraciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de configuraciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-las-resoluciones-y-de-las-consultas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de las resoluciones y de las consultas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuestiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuestiones
+    </span>
+  </a>
   
 </li>
       
@@ -831,90 +871,136 @@
                   
 
 
-<h1 id="practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx">Práctica 2.5 - # Proxy inverso y balanceo de carga con SSL en NGINX</h1>
-<h2 id="creacion-de-certificado-autofirmado">Creación de certificado autofirmado</h2>
-<p>Para comenzar el proceso, tenemos que crear un certificado autofirmado en nuestra máquina que contenga el proxy inverso, y para comenzar, tenemos que crear un directorio de la siguiente manera.</p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%202.5/Screenshot_2.png" /> </p>
-<p>Una vez creado, podemos proceder a la creación del certificado, introduciendo los parámetros que nos van pidiendo.</p>
-<p>Los datos que se ven en el comando son los siguientes:</p>
+<h1 id="practica-41-configuracion-de-un-servidor-dns">Práctica 4.1 - Configuración de un servidor DNS</h1>
+<h3 id="atencion">ATENCIÓN</h3>
+<p>Antes de comenzar la práctica, vamos a eliminar todos los datos que hemos ido introduciendo en el archivo hosts de nuestro sistema durante las otras prácticas, para así asegurarnos de que no interfiere de ninguna manera.</p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%204.1/Screenshot_1.png" /> </p>
+<h2 id="instalacion-del-servidor-dns">Instalación del servidor DNS</h2>
+<p>Para empezar, tenemos que instalar el servidor DNS que vamos a utilizar. En mi caso, he seguido utilizando la máquina virtual de Debian, y vamos a instalar <strong>Bind</strong>. La más recomendada es Bind9, por lo que la instalaremos de una manera muy sencilla utilizando los repositorios oficiales. Antes de instalarlos, nos conectamos a nuestra máquina virtual por SSH.</p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%204.1/Screenshot_2.png" /> </p>
+<p>Y una vez ya conectados, introducimos el comando necesario para instalar el servidor DNS, de la siguiente manera.</p>
+<p><code>sudo apt-get install bind9 bind9utils bind9-doc</code></p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%204.1/Screenshot_3.png" /> </p>
+<h2 id="configuracion-del-servidor">Configuración del servidor</h2>
+<p>En nuestro caso, sólo vamos a utilizar IPv4, por lo que vamos a modificar el archivo de configuración de bind para indicar esto.</p>
+<p>Este archivo estará por defecto en el directorio <em>/etc/default</em>, y para indicar que solo se use el IPv4 simplemente debemos modificar la línea siguiente con el texto que se indica.</p>
+<p><code>OPTIONS = "-u bind -4"</code></p>
+<p>De manera que quedaría de la siguiente forma</p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%204.1/Screenshot_4.png" /> </p>
+<p>También, antes de seguir, vamos a ver el archivo named.conf que se encuentra en <em>/etc/bind</em>, que es el siguiente</p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%204.1/Screenshot_5.png" /> </p>
+<p>En ese archivo podemos comprobar que están los archivos de configuración que usaremos, los 3 que vienen indicados en el <strong>include</strong>.</p>
+<h2 id="configuracion-de-namedconfoptions">Configuración de <em>named.conf.options</em></h2>
+<p>Antes de modificar los archivos, recomiendo hacer una copia de seguridad, por si en algún momento queremos regresar al archivo de configuración original. Para copiarlo, podemos hacerlo de la siguiente manera.</p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%204.1/Screenshot_6.png" /> </p>
+<p>Una vez creada nuestra copia, vamos a ir a modificar el archivo <strong>named.conf.options</strong>, en el cual tenemos que asegurarnos de incluir ciertos contenidos.</p>
+<ul>
+<li>Vamos a añadir una lista de acceso para que solo accedan los hosts que deseemos, los cuales serán de la red 192.168.X.0/24. Recordad que la X depende de la red a la que estemos conectados. Se debe añadir al comienzo del archivo, quedaría de la siguiente manera.</li>
+</ul>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%204.1/Screenshot_7.png" /> </p>
+<p>Tras esto, vamos a añadir mas líneas, esta vez más cantidad, y es para asegurarnos de.</p>
 <ul>
 <li>
-<p><strong>openssl</strong>: es la herramienta de línea de comandos que usamos para gestionar certificados, claves y otros archivos relacionados con OpenSSL.</p>
+<p>Que solo se podrán permitir las consultas recursivas a los hosts que hemos dado acceso</p>
 </li>
 <li>
-<p><strong>req</strong>: este subcomando se usa para generar solicitudes de certificado, o también solicitudes de firma de certificados (CSR).</p>
+<p>Que no se permitan transferencias de zonas a nadie.</p>
 </li>
 <li>
-<p><strong>-x509</strong>: al añadir esta opción, le indicamos a OpenSSL que queremos un certificado autofirmado en lugar de una solicitud de firma de certificado.</p>
+<p>Configuraremos el servidor para que escuche las consultas DNS en el puerto 53 y en la IP de la red privada (De la máquina virtual Debian).</p>
 </li>
 <li>
-<p><strong>-nodes</strong>: le dice a OpenSSL que no proteja el certificado con una contraseña. Esto es importante para que Nginx pueda leer el archivo sin pedir una contraseña cada vez que se reinicia el servidor.</p>
+<p>Permitir consultas recursivas.</p>
 </li>
 <li>
-<p><strong>-days 365</strong>: define la duración de validez del certificado; en este caso, lo configuramos para un año.</p>
-</li>
-<li>
-<p><strong>-newkey rsa:2048</strong>: especifica que generaremos un nuevo certificado y una clave al mismo tiempo. Elegimos una clave RSA de 2048 bits para asegurarla.</p>
-</li>
-<li>
-<p><strong>-keyout</strong>: le indica a OpenSSL dónde guardar el archivo con la clave privada.</p>
-</li>
-<li>
-<p><strong>-out</strong>: le dice a OpenSSL dónde guardar el archivo del certificado que estamos creando.</p>
+<p>Y vamos a comentar la última línea de **listen-on-v6 { any; }; , ya que como hemos visto antes, las consultas serán IPv4 y no IPv6.</p>
 </li>
 </ul>
-<p><img alt="Screenshot_3" src="../assets/images/Practica%202.5/Screenshot_3.png" /> </p>
-<h2 id="configuracion-ssl-en-el-proxy-inverso">Configuración SSL en el Proxy Inverso</h2>
-<p><strong>AVISO: Recordar a la hora de probar todo en el navegador desactivar la caché o utilizar ventana privada.</strong></p>
-<p>Ahora vamos a modificar el archivo que ya teníamos creado llamado balanceo, cambiando el bloque server y cambiando el puerto de escucha 80, añadiendo las configuraciones que veremos en la imagen a continuación.</p>
-<p><img alt="Screenshot_4" src="../assets/images/Practica%202.5/Screenshot_4.png" /> </p>
-<p>Tras este cambio, vamos a reiniciar nginx para que los cambios aparezcan.</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%202.5/Screenshot_5.png" /> </p>
-<h2 id="comprobaciones">Comprobaciones</h2>
-<p>Ahora, cuando entremos en nuestra web, nos saltará un aviso, puesto que nuestro certificado es autofirmado. Aceptamos, ya que no hay problema, puesto que nuestro certificado es seguro, ya que lo hemos generado nosotros. Una vez en la web, vamos a comprobar que el certificado es correcto. Pulsando en el candado, le damos a más información.</p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%202.5/Screenshot_6.png" /> </p>
-<p>Después, en el apartado de seguridad le daremos a ver certificado.</p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%202.5/Screenshot_7.png" /> </p>
-<p>Ahí ya podremos ver todos los datos de nuestro certificado, como en la siguiente imagen.</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%202.5/Screenshot_8.png" /> </p>
-<p>Si intentásemos acceder al http, nos sale la web básica de nginx, porque por ahora no nos está redirigiendo al https.</p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%202.5/Screenshot_9.png" /> </p>
-<h2 id="redireccion-forzosa-a-https">Redirección forzosa a HTTPS</h2>
-<p>Para que no importe desde donde accedemos a la web, vamos a añadir un nuevo bloque server, para que nos redirija automáticamente al HTTPS.</p>
-<p>Así quedaría el nuevo bloque junto al anterior.</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%202.5/Screenshot_10.png" /> </p>
-<p>Como de costumbre, reiniciamos NGINX para reflejar los cambios.</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%202.5/Screenshot_11.png" /> </p>
-<p>Tras esto, compruebo que efectivamente, al ir por HTTP, me redirige automáticamente al HTTPS.</p>
-<p><img alt="Screenshot_12" src="../assets/images/Practica%202.5/Screenshot_12.png" /> </p>
-<p>Para comprobarlo mejor, vamos a ver los logs de acceso, tanto del HTTP como del HTTPS</p>
-<p><img alt="Screenshot_13" src="../assets/images/Practica%202.5/Screenshot_13.png" /> </p>
-<p><img alt="Screenshot_14" src="../assets/images/Practica%202.5/Screenshot_14.png" /> </p>
-<h2 id="cuestiones-finales">Cuestiones finales</h2>
-<h3 id="cuestion-1">Cuestion 1</h3>
-<p>Hemos configurado nuestro proxy inverso con todo lo que nos hace falta pero no nos funciona y da un error del tipo <code>This site can't provide a secure connection, ERR_SSL_PROTOCOL_ERROR.</code></p>
-<p>Dentro de nuestro server block tenemos esto:</p>
-<pre><code>server {
-    listen 443;
-    ssl_certificate /etc/nginx/ssl/enrico-berlinguer/server.crt;
-    ssl_certificate_key /etc/nginx/ssl/enrico-berlinguer/server.key;
-    ssl_protocols TLSv1.3;
-    ssl_ciphers ECDH+AESGCM:DH+AESGCM:ECDH+AES256:DH+AES256:ECDH+AES128:DH+AES:ECDH+3DES:DH+3DES:RSA+AESGCM:RSA+AES:RSA+3DES:!aNULL:!MD5:!DSS;
-    server_name enrico-berlinguer;
-    access_log /var/log/nginx/https_access.log;
-
-    location / {
-        proxy_pass http://red-party;
-        }
-    }
-</code></pre>
-<p>El error que vemos es un error de SSL, y es porque en el comienzo del server, nos falta un ssl al lado del listen 443, de manera que quede como</p>
-<p><code>listen 443 ssl;</code></p>
-<h3 id="cuestion-2">Cuestion 2</h3>
-<p>¿Cómo solucionamos el siguiente error?</p>
-<p><img alt="Screenshot_15" src="../assets/images/Practica%202.5/Screenshot_15.png" /> </p>
-<p>Este error, <code>NET::ERR_CERT_REVOKED</code>, significa que el certificado SSL del sitio ha sido revocado por la autoridad de certificación (CA) que lo emitió. Esto puede ocurrir por varias razones, como problemas de seguridad, la expiración del certificado, o incluso un error administrativo.</p>
-<p>Para intentar solucionarlo, primero verificamos si el certificado realmente ha sido revocado. Si es así, solicitamos un nuevo certificado y lo reemplazamos en la configuración de Nginx, asegurándonos de reiniciar el servidor para aplicar los cambios. También podemos intentar limpiar la caché del navegador o probarlo en otro navegador, ya que a veces el problema puede estar relacionado con la caché del certificado en el navegador.</p>
+<p>Si lo hemos hecho correctamente, debe quedar algo así</p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%204.1/Screenshot_8.png" /> </p>
+<p>Para comprobar si todo está correcto, vamos a utilizar un comando, que si no devuelve ningún error y devuelve la línea de comandos, es que todo estará correcto</p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%204.1/Screenshot_9.png" /> </p>
+<p>Si todo está correcto, reiniciamos el servidor y comprobamos que esté en funcionamiento</p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%204.1/Screenshot_10.png" /> </p>
+<h2 id="configuracion-de-namedconflocal">Configuración de <em>named.conf.local</em></h2>
+<p>Ahora vamos con el siguiente archivo de configuración, donde vamos a declarar una zona llamada <em>deaw.es</em>.</p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%204.1/Screenshot_11.png" /> </p>
+<h2 id="creacion-del-archivo-de-zona">Creación del archivo de zona</h2>
+<p>Ahora tenemos que crear nuestro archivo de zona de resolución directa en el directorio que hemos indicado antes en el archivo de configuración, y también nombrarlo con el mismo nombre.</p>
+<p>Tras crearlo, debería quedarnos así.</p>
+<p><img alt="Screenshot_12" src="../assets/images/Practica%204.1/Screenshot_12.png" /> </p>
+<p>En la parte final, debemos poner nuestras IPs privadas correspondientes.</p>
+<h2 id="creacion-del-archivo-de-zona-para-la-resolucion-inversa">Creación del archivo de zona para la resolución inversa</h2>
+<p>Ahora tenemos que volver al archivo de <strong>named.conf.local</strong>, ya que tenemos que añadir un nuevo archivo de zona, y tenemos que añadir las líneas a la configuración.</p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%204.1/Screenshot_13.png" /> </p>
+<p>El primer número <strong>254</strong> indica el tercer byte de la red, cada uno tendrá la suya. Una vez añadido, podemos hacer el archivo de configuración inversa.</p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%204.1/Screenshot_14.png" /> </p>
+<h2 id="comprobacion-de-configuraciones">Comprobación de configuraciones</h2>
+<p>Ahora tenemos que comprobar que todo funciona correctamente, y para ello vamos a comenzar con la de la zona de resolución directa.</p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%204.1/Screenshot_15.png" /> </p>
+<p>Nos indica que todo OK, por lo que vamos a comprobar la de resolución inversa, la cual también nos devuelve un OK.</p>
+<p><img alt="Screenshot_16" src="../assets/images/Practica%204.1/Screenshot_16.png" /> </p>
+<p>Tras esta comprobación, volvemos a reiniciar el servicio, y comprobamos que funcione correctamente.</p>
+<p><img alt="Screenshot_17" src="../assets/images/Practica%204.1/Screenshot_17.png" /> </p>
+<h2 id="comprobacion-de-las-resoluciones-y-de-las-consultas">Comprobación de las resoluciones y de las consultas</h2>
+<p>Antes de realizar estas comprobaciones, vamos a asegurarnos de que el cliente está configurado para usar como servidor DNS el que hemos instalado y configurado, por lo que tenemos que cambiar la configuración de red para que la máquina lo utilice como servidor principal. Realizamos la siguiente modificación.</p>
+<p><img alt="Screenshot_18" src="../assets/images/Practica%204.1/Screenshot_18.png" /> </p>
+<p>Con esto realizado, ya podemos comprobar las resoluciones, lo haremos de dos maneras, la primera es utilizando <strong>nslookup</strong></p>
+<p><img alt="Screenshot_19" src="../assets/images/Practica%204.1/Screenshot_19.png" /> </p>
+<p>Y la segunda utilizando <strong>dig</strong></p>
+<p><img alt="Screenshot_20" src="../assets/images/Practica%204.1/Screenshot_20.png" /> </p>
+<p><img alt="Screenshot_21" src="../assets/images/Practica%204.1/Screenshot_21.png" /> </p>
+<h2 id="cuestiones">Cuestiones</h2>
+<blockquote>
+<p>Cuestión 1
+¿Qué pasará si un cliente de una red diferente a la tuya intenta hacer uso de tu DNS de alguna manera, le funcionará?¿Por qué, en qué parte de la configuración puede verse?</p>
+</blockquote>
+<p>No funcionará porque en la configuración limitamos el acceso solo a nuestra red con el acl confiables, en <strong>named.conf.options</strong></p>
+<blockquote>
+<p>Cuestión 2
+¿Por qué tenemos que permitir las consultas recursivas en la configuración?</p>
+</blockquote>
+<p>Porque sin consultas recursivas, el servidor no podrá buscar respuestas en otros servidores DNS cuando no sea autoritativo para un dominio.</p>
+<blockquote>
+<p>Cuestión 3
+El servidor DNS que acabáis de montar, ¿es autoritativo?¿Por qué?</p>
+</blockquote>
+<p>Si lo es, ya que en el archivo <strong>named.conf.local</strong> hemos declarado dos zonas específicas.</p>
+<blockquote>
+<p>Cuestión 4
+¿Dónde podemos encontrar la directiva $ORIGIN y para qué sirve?</p>
+</blockquote>
+<p>La encontramos en los archivos de zona,  y sirve para definir el dominio al que pertenecen los registros.</p>
+<blockquote>
+<p>Cuestión 5
+¿Una zona es idéntico a un dominio? </p>
+</blockquote>
+<p>No, una zona es parte de un dominio, pero un dominio puede tener una o varias zonas.</p>
+<blockquote>
+<p>Cuestión 6
+¿Pueden editarse los archivos de zona de un servidor esclavo/secundario?</p>
+</blockquote>
+<p>No, porque se copian de manera automática del primario, por lo que no los editamos directamente.</p>
+<blockquote>
+<p>Cuestión 7
+¿Por qué podría querer tener más de un servidor esclavo para una misma zona?</p>
+</blockquote>
+<p>Para mejorar la redundancia y disponibilidad, así si uno nos falla, los otros pueden seguir funcionando.</p>
+<blockquote>
+<p>Cuestión 8
+¿Cuántos servidores raíz existen?</p>
+</blockquote>
+<p>Existen 13 servidores raíz, aunque cada uno tiene varias réplicas distribuidas, no son 13 servidores físicos y ya.</p>
+<blockquote>
+<p>Cuestión 9
+¿Qué es una consulta iterativa de referencia?</p>
+</blockquote>
+<p>Es cuando un servidor DNS devuelve otra dirección para que el cliente continúe buscando por su cuenta.</p>
+<blockquote>
+<p>Cuestión 10
+En una resolución inversa, ¿a qué nombre se mapearía la dirección IP 172.16.34.56?</p>
+</blockquote>
+<p>Se mapearía como <strong>56.34.16.172.in-addr.arpa.</strong></p>
 
 
 
