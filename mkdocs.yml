@@ -21,3 +21,6 @@ nav:
         - Práctica 3.4 - Despliegue de una aplicación Flask (Python): practica3_4/index.md
       - Unidad 4:
         - Práctica 4.1 - Configuración de un servidor DNS: practica4_1/index.md
+      - Unidad 5:
+        - Práctica 5.1 - Ejercicios Git y Github (I): practica5_1/index.md
+        - Práctica 5.2 - Ejercicios Git y Github (II): practica5_2/index.md
