@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica3_3/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica6_1/">
       
       
-        <link rel="prev" href="../practica3_2/">
-      
-      
-        <link rel="next" href="../practica3_4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Práctica 3.3 - Despliegue de una aplicación React en Netlify (PaaS) - Web de Sergio</title>
+        <title>Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js - Web de Sergio</title>
       
     
     
@@ -64,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-33-despliegue-de-una-aplicacion-react-en-netlify-paas" class="md-skip">
+        <a href="#practica-61-dockerizacion-del-despliegue-de-una-aplicacion-nodejs" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 3.3 - Despliegue de una aplicación React en Netlify (PaaS)
+              Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js
             
           </span>
         </div>
@@ -210,19 +206,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -236,7 +230,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             DAW
@@ -416,19 +410,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -442,7 +434,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Unidad 3
@@ -495,30 +487,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 3.3 - Despliegue de una aplicación React en Netlify (PaaS)
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica3_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,53 +499,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-nuestra-aplicacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de nuestra aplicación
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#despliegue-en-netlify" class="md-nav__link">
-    <span class="md-ellipsis">
-      Despliegue en Netlify
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#despliegue-mediante-conexion-con-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Despliegue mediante conexión con Github
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -855,29 +780,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-nuestra-aplicacion" class="md-nav__link">
+  <a href="#despliegue-con-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de nuestra aplicación
+      Despliegue con Docker
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#despliegue-en-netlify" class="md-nav__link">
+  <a href="#docker-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      Despliegue en Netlify
+      Docker Compose
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarea" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarea
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#despliegue-mediante-conexion-con-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      Despliegue mediante conexión con Github
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -896,67 +827,86 @@
                   
 
 
-<h1 id="practica-33-despliegue-de-una-aplicacion-react-en-netlify-paas">Práctica 3.3: Despliegue de una aplicación React en Netlify (PaaS)</h1>
-<h2 id="creacion-de-nuestra-aplicacion">Creación de nuestra aplicación</h2>
-<p>Tras loguearnos por SSH en nuestro Debian, vamos a crear un directorio para albergar la aplicación y crear 3 archivos, dos html y un js, que conformarán la sencilla aplicación de ejemplo. Deben quedar de la siguiente manera</p>
-<p><img alt="Screenshot_1" src="../assets/images/Practica%203.3/Screenshot_1.png" /> </p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%203.3/Screenshot_2.png" /></p>
-<p><img alt="Screenshot_3" src="../assets/images/Practica%203.3/Screenshot_3.png" /></p>
-<p><img alt="Screenshot_4" src="../assets/images/Practica%203.3/Screenshot_4.png" /></p>
-<p>Una vez creado el directorio y los archivos, vamos a utilizar el comando npm init y comprobar que nuestra aplicación funciona correctamente de manera local</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%203.3/Screenshot_5.png" /></p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%203.3/Screenshot_6.png" /></p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%203.3/Screenshot_7.png" /></p>
-<p>Vemos que efectivamente, funciona, con esto ya podríamos desplegarla en múltiples plataformas en la nube, como Heroku, AWS, GCP etc.</p>
-<h2 id="despliegue-en-netlify">Despliegue en Netlify</h2>
-<p>Para este despliegue, vamos a tomar una aplicación de ejemplo, para ello, vamos a colnar el repositorio correspondiente</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%203.3/Screenshot_8.png" /></p>
-<p>Una vez creado, vamos a crear una cuenta en Netlify, pues la necesitaremos para realizar todo este proceso. Es muy importante que nos registremos solo con el e-mail, y aún no la vinculemos con github.</p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%203.3/Screenshot_9.png" /></p>
-<p>Ahora si podemos empezar con el despliegue mediante CLI, para ello, vamos a tener que instalarlo con el siguiente comando</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%203.3/Screenshot_10.png" /></p>
-<p>Una vez instalado, nos identificaremos en nuestra cuenta de netlify para poder utilizarla sin problema desde la consola de comandos</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%203.3/Screenshot_11.png" /></p>
-<p>Para poder desplegar todo sin complicación, vamos a tener que instalar todas las dependencias del archivo package.json, por lo que usaremos npm install, y después haremos un run build para contener la aplicación que debemos desplegar.</p>
-<p><img alt="Screenshot_12" src="../assets/images/Practica%203.3/Screenshot_12.png" /></p>
-<p><img alt="Screenshot_13" src="../assets/images/Practica%203.3/Screenshot_13.png" /></p>
-<p>Con todo esto ya creado, podemos proceder a desplegar la aplicación en en Netlify. Nos hará algunas preguntas, debemos indicar que queremos crear y configurar un nuevo sitio, dejaremos el Team por defecto, e indicaremos que queremos ponerle de nombre "nombre"-practica3-4 y utilizaremos el directorio ./build.</p>
-<p><img alt="Screenshot_14" src="../assets/images/Practica%203.3/Screenshot_14.png" /></p>
-<p><img alt="Screenshot_15" src="../assets/images/Practica%203.3/Screenshot_15.png" /></p>
-<p>Una vez terminado, si todo ha ido bien, nos saldrá un mensaje y un borrador. Si el borrador esta bien, podemos pasar a desplegar la aplicación. Nos darán un link para comprobar que esta todo bien.</p>
-<p><img alt="Screenshot_16" src="../assets/images/Practica%203.3/Screenshot_16.png" /></p>
-<p><img alt="Screenshot_17" src="../assets/images/Practica%203.3/Screenshot_17.png" /></p>
-<h2 id="despliegue-mediante-conexion-con-github">Despliegue mediante conexión con Github</h2>
-<p>Ahora vamos a desplegar mediante una conexión con Github, para ello, vamos a empezar borrando el despliegue en Netlify, para evitar problemas. También aprovecharemos para borrar el directorio donde hicimos el clonado del repositorio de Github.</p>
-<p><img alt="Screenshot_18" src="../assets/images/Practica%203.3/Screenshot_18.png" /></p>
-<p><img alt="Screenshot_19" src="../assets/images/Practica%203.3/Screenshot_19.png" /></p>
-<p>Como la idea es simular que lo vamos a subir a Github por primera vez, en vez de hacer un clonado, vamos a obtener el zip sin que tenga ninguna referencia a Github</p>
-<p><img alt="Screenshot_20" src="../assets/images/Practica%203.3/Screenshot_20.png" /></p>
-<p>Una vez lo tengamos, vamos a crear una carpeta nueva y a descomprimir aquí el correspondiente ZIP que hemos descargado.</p>
-<p><img alt="Screenshot_21" src="../assets/images/Practica%203.3/Screenshot_21.png" /></p>
-<p>Ahora vamos a Github para crear un repositorio completamente vacío, que será donde subiremos lo que hemos descargado.</p>
-<p><img alt="Screenshot_22" src="../assets/images/Practica%203.3/Screenshot_22.png" /></p>
-<p>Una vez hecho esto, vamos a proceder a desplegar la aplicación en el repositorio de Github, realizando todo el proceso para hacer el push y subir todo el contenido.</p>
-<p><img alt="Screenshot_23" src="../assets/images/Practica%203.3/Screenshot_23.png" /></p>
-<p><img alt="Screenshot_24" src="../assets/images/Practica%203.3/Screenshot_24.png" /></p>
-<p><img alt="Screenshot_25" src="../assets/images/Practica%203.3/Screenshot_25.png" /></p>
-<p>Con esto ya tenemos todo el código en GitHub, y vamos a tener que vincular nuestra cuenta de Github con la de Netlify, vamos a importar un proyecto en Netlify, dándole a importar desde Github.</p>
-<p><img alt="Screenshot_26" src="../assets/images/Practica%203.3/Screenshot_26.png" /></p>
-<p>Vamos a especificar que solo sea el repositorio que hemos creado anteriormente.</p>
-<p><img alt="Screenshot_27" src="../assets/images/Practica%203.3/Screenshot_27.png" /></p>
-<p>Y ya quedará listo, desplegándose la aplicación, ya que Netlifyse encarga de hacer el build de forma automática.</p>
-<p><img alt="Screenshot_28" src="../assets/images/Practica%203.3/Screenshot_28.png" /></p>
-<p>Ahora, cuando hagamos un cambio en el proyecto y hagamos un commit push en Github, automáticamente se generará un nuevo despliegue en Netlify. Para ello, haremos unas comprobaciones, vamos a ver que el archivo robots.txt, está de la siguiente manera.</p>
-<p><img alt="Screenshot_29" src="../assets/images/Practica%203.3/Screenshot_29.png" /></p>
-<p>Una vez comprobado, vamos a modificar el archivo, que está en la carpeta public, y vamos a añadir en Disallow nuestro nombre y apellido de la siguiente manera.</p>
-<p><img alt="Screenshot_30" src="../assets/images/Practica%203.3/Screenshot_30.png" /></p>
-<p>Una vez hecho el cambio, volvemos a hacer un despliegue en Github, podemos comprobar con date que se ha producido el deploy.</p>
-<p><img alt="Screenshot_31" src="../assets/images/Practica%203.3/Screenshot_31.png" /></p>
-<p><img alt="Screenshot_32" src="../assets/images/Practica%203.3/Screenshot_32.png" /></p>
-<p>En el dashboard de Netlify podemos comprobar que se ha producido un deploy, y vemos como esta haciendo el Building.</p>
-<p><img alt="Screenshot_33" src="../assets/images/Practica%203.3/Screenshot_33.png" /></p>
-<p>Y cuando termina, volvemos a ir al archivo robots.txt, y efectivamente, veremos el cambio reflejado.</p>
-<p><img alt="Screenshot_34" src="../assets/images/Practica%203.3/Screenshot_34.png" /></p>
+<h1 id="practica-61-dockerizacion-del-despliegue-de-una-aplicacion-nodejs">Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js</h1>
+<h2 id="despliegue-con-docker">Despliegue con Docker</h2>
+<p>Antes de comenzar con la práctica, vamos a conectarnos a nuestra máquina virtual a través de SSH.</p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%206.1/Screenshot_1.png" /> </p>
+<p>Una vez realizada la conexión, para poder realizar la práctica, tenemos que clonar un repositorio de github en nuestra Debian, por lo que vamos a hacerlo para tenerlo todo preparado.</p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%206.1/Screenshot_2.png" /> </p>
+<p>Y por último, vamos a instalar docker, para ello, primero hacemos update del apt, ya que si no, puede que tengamos errores al descargar docker. Tras esto, lo descargamos desde la propia consola de comandos.</p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%206.1/Screenshot_3.png" /> </p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%206.1/Screenshot_4.png" /> </p>
+<p>Una vez ya instalado docker, vamos a ir al repositorio clonado, lugar donde encontraremos el dockerfile, el cual vamos a analizar.</p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%206.1/Screenshot_5.png" /> </p>
+<ul>
+<li>
+<p>Con <strong>FROM</strong> indicamos que vamos a utilizar la imagen de Docker Hub oficial de Node, en su versión 18.16.0 junto con Alpine, una diminuta distribución Linux.</p>
+</li>
+<li>
+<p><strong>RUN</strong> ejecuta un comando en una nueva capa de la imagen (podemos tener varios comandos <strong>RUN</strong>).</p>
+</li>
+<li>
+<p><strong>WORKDIR</strong> define el directorio sobre el que se ejecutarán las subsiguientes instrucciones del Dockerfile.</p>
+</li>
+<li>
+<p><strong>COPY</strong> como su nombre indica, copia los archivos que le indiquemos dentro del contenedor, en este caso package.json
+Recordemos que package.json cumplía ciertas funciones importantes:</p>
+<p>Centraliza la forma de interactuar con la aplicación por medio de definición de scripts (indica comandos que podemos correr dentro de nuestro proyecto, asociándolos a una palabra clave para que npm (o yarn) los reconozca cuando queramos ejecutarlos.)</p>
+<p>Gestiona de una forma clara y sencilla las dependencias necesarias para que la aplicación pueda funcionar correctamente.</p>
+</li>
+<li>
+<p>Con otro <strong>RUN</strong> ejecutamos el ya conocido comando que nos instala las dependencias que se indican en el archivo que hemos copiado en el paso anterior, el package.json.</p>
+</li>
+<li>
+<p>Con <strong>COPY</strong> copiamos todos los archivos de nuestro directorio /src al contenedor.</p>
+</li>
+<li>
+<p><strong>EXPOSE</strong> nos permite documentar que puertos están expuestos o a la escucha en el contenedor (sólo será accesible desde otros contenedores).</p>
+</li>
+<li>
+<p>Y finalmente <strong>CMD</strong> nos permite ejecutar un comando dentro del contenedor. En este caso iniciamos la aplicación.</p>
+</li>
+</ul>
+<p>Una vez analizado el contenido de este archivo, vamos a hacer una build de la imagen de docker. Vamos a llamarla <code>librodirecciones</code> y le indicaremos tanto el nombre, como que haga la build con el contexto de nuestro directorio actual de trabajo, y el Dockerfile que se encuentra en él.</p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%206.1/Screenshot_6.png" /> </p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%206.1/Screenshot_7.png" /> </p>
+<p>Tras esto, y ver que todo ha ido bien, vamos a iniciar el contenedor con nuestra aplicación. Gracias a la opción <code>-p</code>, vamos a poder indicar que se escuchen conexiones entrantes de cualquier maquina en nuestro puerto 3000 (La de la máquina anfitrión), que haremos que coincida con el puerto 3000 del contenedor (Por eso <code>-p 3000:3000</code>). Y con la opción de -d lo que haremos es que corra en modo demonio, en background.</p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%206.1/Screenshot_8.png" /> </p>
+<p>Ya lo hemos realizado, por lo que intentamos acceder con nuestra IP, y veremos que hay un error de conexión.</p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%206.1/Screenshot_9.png" /> </p>
+<p>Con esto comprobamos que los contenedores tienen su propia red, la aplicación por defecto va a intentar buscar la base de datos en nuestro localhost, pero realmente está en otro host, el de su contenedor.</p>
+<p>Cada contenedor es un host diferente, por mucho que se corra en la misma máquina, y esto lleva a la aplicación a fallar cuando intenta conectar.</p>
+<p>Podríamos solucionarlo utilizando comandos network del propio Docker, pero vamos a hacerlo con Docker Compose, una herramienta que nos permite administrar contenedores.</p>
+<h2 id="docker-compose">Docker Compose</h2>
+<p>Como he mencionado antes, Docker Compose nos permite gestionar aplicaciones multicontenedor.</p>
+<p>Vamos a instalar Docker Compose en nuestra máquina, a través de la consola de comandos.</p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%206.1/Screenshot_10.png" /> </p>
+<p>Comprobamos la versión y que está instalada correctamente de la siguiente manera.</p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%206.1/Screenshot_11.png" /> </p>
+<p>Ahora que tenemos nuestro Docker Compose instalado, vamos a ver un archivo YAML que utiliza Docker Compose para describir la aplicación, el cual es el siguiente.</p>
+<p><img alt="Screenshot_12" src="../assets/images/Practica%206.1/Screenshot_12.png" /> </p>
+<p>Viendo que efectivamente tenemos el archivo, para levantar la infraestructura basada en los contenedores es tan fácil como utilizar un comando.</p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%206.1/Screenshot_13.png" /> </p>
+<p>Gracias a esto, se crean las tablas necesarias en la base de datos, y ahora lo que haremos es construir nuestros contenedores a partir de las imágenes, con el siguiente comando.</p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%206.1/Screenshot_14.png" /> </p>
+<p>Una vez ya hemos construido las imágenes, podemos finalmente levantar los contenedores, realizando un test para comprobar que todo funciona correctamente.</p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%206.1/Screenshot_15.png" /> </p>
+<h3 id="tarea">Tarea</h3>
+<p>Probad que la aplicación junto con la BBDD funciona correctamente. El funcionamiento de la API es:</p>
+<pre><code>GET /persons/all muestra todas las personas en el libro de direcciones
+GET /persons/1 muestra la persona con el id 1
+PUT /persons/ añade una persona al libro de direcciones
+DELETE /persons/1 elimina a la persona con el id 1
+</code></pre>
+<p><img alt="Screenshot_16" src="../assets/images/Practica%206.1/Screenshot_16.png" /> </p>
+<p>Primero, añadimos a una persona al libro de direcciones.</p>
+<p><code>curl -X PUT http://localhost:3000/persons -H 'Content-Type: application/json' -d '{"id": 1, "firstName": "Raúl", "lastName": "Profesor"}'</code></p>
+<p>Ahora, vamos a listar a todas las personas en el libro de direcciones.</p>
+<p><code>curl -X GET http://localhost:3000/persons/all -H 'Content-Type: application/json'</code></p>
+<p>Buscaremos a la persona que hemos añadido con su ID en concreto (1)</p>
+<p><code>curl -X GET http://localhost:3000/persons/1 -H 'Content-Type: application/json'</code></p>
+<p>Finalmente, borraremos a la persona con un ID en concreto (1). Como se ve en la imagen, con el comando de listar a todas las personas comprobamos que efectivamente, se ha borrado.</p>
+<p><code>curl -X DELETE http://localhost:3000/persons/1 -H 'Content-Type: application/json'</code></p>
 
 
 
