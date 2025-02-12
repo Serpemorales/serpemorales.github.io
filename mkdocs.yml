@@ -24,3 +24,5 @@ nav:
       - Unidad 5:
         - Práctica 5.1 - Ejercicios Git y Github (I): practica5_1/index.md
         - Práctica 5.2 - Ejercicios Git y Github (II): practica5_2/index.md
+      - Unidad 6:
+        - Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js: practica5_1/index.md
