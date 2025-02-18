@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://serpemorales.github.io/practica2_3/">
+        <link rel="canonical" href="https://serpemorales.github.io/practica6_2/">
       
       
-        <link rel="prev" href="../practica2_2/">
+        <link rel="prev" href="../practica6_1/">
       
-      
-        <link rel="next" href="../practica2_4/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.3 - Proxy Inverso con Nginx - Web de Sergio</title>
+        <title>Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose - Web de Sergio</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-23-proxy-inverso-con-nginx" class="md-skip">
+        <a href="#practica-62-despliegue-de-una-aplicacion-php-con-nginx-y-mysql-usando-docker-y-docker-compose" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.3 - Proxy Inverso con Nginx
+              Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose
             
           </span>
         </div>
@@ -247,19 +245,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -273,7 +269,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Unidad 2
@@ -326,30 +322,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.3 - Proxy Inverso con Nginx
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../practica2_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -358,71 +334,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#clonacion-de-maquina-virtual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clonación de Máquina Virtual
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-maquina-principal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración Máquina Principal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-maquina-proxy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración Máquina Proxy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobaciones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#anadir-cabecera" class="md-nav__link">
-    <span class="md-ellipsis">
-      Añadir cabecera
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -779,17 +690,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
@@ -803,7 +716,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_5">
             <span class="md-nav__icon md-icon"></span>
             Unidad 6
@@ -835,10 +748,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../practica6_2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -847,6 +780,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#proceso-de-dockerizacion-de-nginxphpmysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proceso de dockerización de Nginx+PHP+MySQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proceso de dockerización de Nginx+PHP+MySQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-estructura-de-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Estructura de directorios
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-creacion-de-un-contenedor-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Creación de un contenedor Nginx
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-creacion-de-un-contenedor-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Creación de un contenedor PHP
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-creacion-de-un-contenedor-para-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Creación de un contenedor para datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-creacion-de-un-contenedor-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Creación de un contenedor MySQL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-verificacion-de-conexion-a-la-base-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Verificación de conexión a la base de datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-esquema-de-la-infraestructura-completa-de-contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Esquema de la infraestructura completa de contenedores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -894,47 +925,80 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clonacion-de-maquina-virtual" class="md-nav__link">
+  <a href="#proceso-de-dockerizacion-de-nginxphpmysql" class="md-nav__link">
     <span class="md-ellipsis">
-      Clonación de Máquina Virtual
+      Proceso de dockerización de Nginx+PHP+MySQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proceso de dockerización de Nginx+PHP+MySQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-estructura-de-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Estructura de directorios
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-maquina-principal" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-creacion-de-un-contenedor-nginx" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración Máquina Principal
+      2. Creación de un contenedor Nginx
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-maquina-proxy" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#3-creacion-de-un-contenedor-php" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración Máquina Proxy
+      3. Creación de un contenedor PHP
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#4-creacion-de-un-contenedor-para-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones
+      4. Creación de un contenedor para datos
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#anadir-cabecera" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#5-creacion-de-un-contenedor-mysql" class="md-nav__link">
     <span class="md-ellipsis">
-      Añadir cabecera
+      5. Creación de un contenedor MySQL
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-verificacion-de-conexion-a-la-base-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Verificación de conexión a la base de datos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-esquema-de-la-infraestructura-completa-de-contenedores" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Esquema de la infraestructura completa de contenedores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -953,37 +1017,69 @@
                   
 
 
-<h1 id="practica-23-proxy-inverso-con-nginx">Práctica 2.3 - Proxy Inverso con Nginx</h1>
-<h2 id="clonacion-de-maquina-virtual">Clonación de Máquina Virtual</h2>
-<p>Primero vamos a tener que clonar la Máquina Virtual para así tener dos servidores, el que ya teníamos de antes, y el del proxy. Es muy importante que generemos nuevas direcciones MAC en esta clonación.</p>
-<p><img alt="Screenshot_1" src="../assets/images/Practica%202.3/Screenshot_1.png" /> </p>
-<p>Una vez tengamos las dos máquinas, ya podemos empezar.</p>
-<p><img alt="Screenshot_2" src="../assets/images/Practica%202.3/Screenshot_2.png" /> </p>
-<h2 id="configuracion-maquina-principal">Configuración Máquina Principal</h2>
-<p><strong>AVISO: Recordar a la hora de probar todo en el navegador desactivar la caché o utilizar ventana privada.</strong></p>
-<p>Para preparar la máquina principal, vamos a cambiar el nombre de nuestra web ya creada por <code>webserver</code>, y para ello tenemos que cambiar su nombre en todos los archivos que sean necesarios. Además, haremos que el servidor en lugar de escuchar el puerto 80 escuche el 8080.</p>
-<p><img alt="Screenshot_3" src="../assets/images/Practica%202.3/Screenshot_3.png" /> </p>
-<p>Tras este cambio, es necesario que deshagamos el link simbólico antiguo, y creemos uno nuevo, reiniciando tras esto Nginx.</p>
-<p><img alt="Screenshot_4" src="../assets/images/Practica%202.3/Screenshot_4.png" /> </p>
-<h2 id="configuracion-maquina-proxy">Configuración Máquina Proxy</h2>
-<p>Ahora tenemos que configurar esta máquina para poder acceder al proxy por nuestra web. Para ello, vamos a crear en <em>sites-avalaible</em> un nuevo archivo, configurándolo de la siguiente forma.</p>
-<p><img alt="Screenshot_5" src="../assets/images/Practica%202.3/Screenshot_5.png" /> </p>
-<p>Como se ve, en mi caso le he añadido ya el header, pero no es necesario por ahora.</p>
-<p>Tras esto, vamos a realizar el link simbólico y a reiniciar nginx en esta máquina, para dejar todo a punto .</p>
-<p><img alt="Screenshot_6" src="../assets/images/Practica%202.3/Screenshot_6.png" /> </p>
-<p>Es importante que modifiquemos también el archivo hosts, añadiendo la IP de la máquina que hace de proxy.</p>
-<p><img alt="Screenshot_7" src="../assets/images/Practica%202.3/Screenshot_7.png" /> </p>
-<h2 id="comprobaciones">Comprobaciones</h2>
-<p>Dentro del navegador, si accedemos a las herramientas de desarrollador (En el caso de Firefox con <em>F12</em>) podremos comprobar que el estado sea 200 OK, indicando que todo está correcto.</p>
-<p><img alt="Screenshot_8" src="../assets/images/Practica%202.3/Screenshot_8.png" /> </p>
-<h2 id="anadir-cabecera">Añadir cabecera</h2>
-<p>Como indiqué antes, ahora vamos a añadir una cabecera, de esta manera podemos demostrar de forma más clara que la petición pasa por el proxy inverso y después llega al servidor web por el mismo camino.</p>
-<p><img alt="Screenshot_9" src="../assets/images/Practica%202.3/Screenshot_9.png" /> </p>
-<p>Tras hacerlo en el proxy, lo haremos también en el del servidor web, de manera que quedaría así.</p>
-<p><img alt="Screenshot_10" src="../assets/images/Practica%202.3/Screenshot_10.png" /> </p>
-<p>Es importante que sean nombres distintos, para que sepamos identificar bien cual es cada uno. En mi caso el del proxy se ha llamado <code>Proxy_inverso_sergio</code> y el del servidor web se ha llamado <code>servidor_web_sergio</code>.</p>
-<p>Ahora abrimos de nuevo la web, y volvemos a usar las herramientas de desarrollador de Firefox. Si todo va bien, podremos ver en la cabecera ambos host, de esta manera.</p>
-<p><img alt="Screenshot_11" src="../assets/images/Practica%202.3/Screenshot_11.png" /> </p>
+<h1 id="practica-62-despliegue-de-una-aplicacion-php-con-nginx-y-mysql-usando-docker-y-docker-compose">Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose</h1>
+<p>Como ya es costumbre, antes de comenzar a realizar la práctica, vamos a conectarnos por SSH a nuestra máquina virtual.</p>
+<p><img alt="Screenshot_1" src="../assets/images/Practica%206.2/Screenshot_1.png" /> </p>
+<h2 id="proceso-de-dockerizacion-de-nginxphpmysql">Proceso de dockerización de Nginx+PHP+MySQL</h2>
+<h3 id="1-estructura-de-directorios">1. Estructura de directorios</h3>
+<p>Antes de comenzar, vamos a definir la estructura de directorios que vamos a tener al finalizar la práctica. Lo suyo es que la dejemos ya creada por completo, así en cada paso iremos con más fluidez. Con los correspondientes comandos, creamos todo, asegurándonos de que quede de la siguiente manera.</p>
+<p><img alt="Screenshot_3" src="../assets/images/Practica%206.2/Screenshot_3.png" /> </p>
+<p>Eso lo hemos creado con los siguientes comandos.</p>
+<p><img alt="Screenshot_2" src="../assets/images/Practica%206.2/Screenshot_2.png" /> </p>
+<h3 id="2-creacion-de-un-contenedor-nginx">2. Creación de un contenedor Nginx</h3>
+<p>El primer paso es crear y correr un contenedor Nginx, para que así podamos alojar nuestra aplicación en PHP. Dentro de nuestra carpeta <strong>practica6-2</strong>, vamos a modificar el archivo <code>docker-compose.yml</code>, añadiendo lo siguiente.</p>
+<p><img alt="Screenshot_4" src="../assets/images/Practica%206.2/Screenshot_4.png" /> </p>
+<p>Una vez modificado y guardado, vamos a crear un contenedor con la última versión de la imagen de Nginx, este archivo será el encargado de descargarla, crear el contenedor y publicar o escuchar en el puerto 80 del contenedor, que es también el 80 de nuestra máquina. Iniciamos el proceso.</p>
+<p><img alt="Screenshot_5" src="../assets/images/Practica%206.2/Screenshot_5.png" /> </p>
+<p>Utilizando la opción <code>-d</code> indicamos que el contenedor se ejecute en segundo plano. Para comprobar que esta corriendo, podemos hacerlo con el siguiente comando.</p>
+<p><img alt="Screenshot_6" src="../assets/images/Practica%206.2/Screenshot_6.png" /> </p>
+<p>Como comprobación extra, desde la máquina anfitriona vamos a acceder a la IP de nuestra máquina virtual y podremos ver la página de bienvenida de Nginx.</p>
+<p><img alt="Screenshot_7" src="../assets/images/Practica%206.2/Screenshot_7.png" /> </p>
+<h3 id="3-creacion-de-un-contenedor-php">3. Creación de un contenedor PHP</h3>
+<p>Ahora vamos a ir a la carpeta <code>www/html</code> y modificaremos el archivo <code>index.php</code></p>
+<p>Quedará de la siguiente manera.</p>
+<p><img alt="Screenshot_8" src="../assets/images/Practica%206.2/Screenshot_8.png" /> </p>
+<p>Ahora vamos a guardar el archivo y dirigirnos a la carpeta nginx, para modificar el archivo de configuración <code>default.conf</code> con la siguiente configuración.</p>
+<p><img alt="Screenshot_9" src="../assets/images/Practica%206.2/Screenshot_9.png" /> </p>
+<p>En el mismo directorio de nginx, vamos a modificar el archivo Dockerfile de la siguiente manera.</p>
+<p><img alt="Screenshot_10" src="../assets/images/Practica%206.2/Screenshot_10.png" /> </p>
+<p>Y tras terminar esto, vamos a modificar el archivo <code>docker-compose.yml</code>.</p>
+<p><img alt="Screenshot_11" src="../assets/images/Practica%206.2/Screenshot_11.png" /></p>
+<p>Ahora que ya tenemos modificado el archivo <code>docker-compose.yml</code>, se creará un nuevo contenedor PHP-FPM en el puerto 9000, enlazará el contenedor nginx con el de php, y se creará un volumen que se va a montar en el directorio <code>/var/www/html</code>.</p>
+<p>Vamos a ejecutar el contenedor, tenemos que asegurarnos siempre de que ejecutamos el comando donde esté nuestro archivo <code>docker-compose.yml</code></p>
+<p><img alt="Screenshot_12" src="../assets/images/Practica%206.2/Screenshot_12.png" /></p>
+<p>Como antes, vamos a comprobar que los contenedores están ejecutados como es debido.</p>
+<p><img alt="Screenshot_13" src="../assets/images/Practica%206.2/Screenshot_13.png" /></p>
+<p>Y para una última comprobación, nos dirigimos a nuestra máquina anfitriona y comprobamos de nuevo la IP de nuestra máquina virtual, debiendo ver algo así.</p>
+<p><img alt="Screenshot_14" src="../assets/images/Practica%206.2/Screenshot_14.png" /></p>
+<h3 id="4-creacion-de-un-contenedor-para-datos">4. Creación de un contenedor para datos</h3>
+<p>Antes hemos montado el directorio <code>www/html</code> en ambos contenedores, pero esto no es una manera adecuada de hacerlo. Por eso, vamos a hacer un contenedor independiente que se encargará de contener los datos, y lo enlazaremos con el resto de los contenedores.</p>
+<p>Primer tenemos que editar de nuevo el archivo de <code>docker-compose.yml</code>.</p>
+<p><img alt="Screenshot_15" src="../assets/images/Practica%206.2/Screenshot_15.png" /></p>
+<p>Volvemos a realizar el comando para recrear y lanzar todos nuestros contenedores.</p>
+<p><img alt="Screenshot_16" src="../assets/images/Practica%206.2/Screenshot_16.png" /></p>
+<p>Y realizamos la correspondiente comprobación de que todo están corriendo adecuadamente.</p>
+<p><img alt="Screenshot_17" src="../assets/images/Practica%206.2/Screenshot_17.png" /></p>
+<h3 id="5-creacion-de-un-contenedor-mysql">5. Creación de un contenedor MySQL</h3>
+<p>Ahora vamos a crear un contenedor con una base de datos MySQL. Para ello, vamos a empezar modificando la imagen PHP e instalando la extensión de PHP para MySQL, para poder conectarnos desde nuestra aplicación PHP a la base de datos. Vamos a modificar el archivo Dockerfile del directorio php.</p>
+<p><img alt="Screenshot_18" src="../assets/images/Practica%206.2/Screenshot_18.png" /></p>
+<p>Volvemos a editar el archivo <code>docker-compose.yml</code>, para que se cree el contenedor para MySQL y el contenedor de los datos de MySQL en el que tendremos la base de datos y las tablas.</p>
+<p><img alt="Screenshot_19" src="../assets/images/Practica%206.2/Screenshot_19.png" /></p>
+<p>Cuando lo terminemos de modificar, vamos a editar también nuestro archivo <code>index.php</code>, para comprobar la conexión a la base de datos.</p>
+<p><img alt="Screenshot_20" src="../assets/images/Practica%206.2/Screenshot_20.png" /></p>
+<p>Una vez guardado, vamos a lanzar los contenedores, y verificar que se están ejecutando correctamente.</p>
+<p><img alt="Screenshot_21" src="../assets/images/Practica%206.2/Screenshot_21.png" /></p>
+<p><img alt="Screenshot_22" src="../assets/images/Practica%206.2/Screenshot_22.png" /></p>
+<h3 id="6-verificacion-de-conexion-a-la-base-de-datos">6. Verificación de conexión a la base de datos</h3>
+<p>Si accedemos a la IP de nuestra máquina virtual desde el navegador de la máquina anfitriona, veremos lo siguiente.</p>
+<p><img alt="Screenshot_23" src="../assets/images/Practica%206.2/Screenshot_23.png" /></p>
+<p>Esto se debe a que, a pesar de que si existen algunas tablas, no son visibles para un usuario normal. Para poder verlas, vamos a modificar el archivo <code>index.php</code> y vamos a cambiar lo siguiente, <code>$user por root</code> y <code>$password a secret</code>.</p>
+<p><img alt="Screenshot_24" src="../assets/images/Practica%206.2/Screenshot_24.png" /></p>
+<p>Tras guardarlo, vamos a refrescar la página en el navegador, y ya veremos que nos dan todas las tablas de la base de datos.</p>
+<p><img alt="Screenshot_25" src="../assets/images/Practica%206.2/Screenshot_25.png" /></p>
+<h3 id="7-esquema-de-la-infraestructura-completa-de-contenedores">7. Esquema de la infraestructura completa de contenedores</h3>
+<p>En la siguiente imagen, podemos ver como se dividen los servicios en contenedores de Docker, para trabajar de forma independiente, pero a su vez todos conectados.</p>
+<p><img alt="Screenshot_26" src="../assets/images/Practica%206.2/Screenshot_26.jpg" /></p>
 
 
 
