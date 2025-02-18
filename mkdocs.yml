@@ -26,3 +26,4 @@ nav:
         - Práctica 5.2 - Ejercicios Git y Github (II): practica5_2/index.md
       - Unidad 6:
         - Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js: practica6_1/index.md
+        - Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose: practica6_2/index.md
