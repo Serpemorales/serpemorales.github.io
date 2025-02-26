@@ -27,3 +27,4 @@ nav:
       - Unidad 6:
         - Práctica 6.1 - Dockerización del despliegue de una aplicación Node.js: practica6_1/index.md
         - Práctica 6.2 - Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose: practica6_2/index.md
+        - Práctica 6.3 - Despliegue de servidores web con usuarios autenticados mediante LDAP usando Docker y docker-compose: practica6_3/index.md
